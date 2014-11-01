@@ -1,48 +1,138 @@
 <?php
+  /**
+
+  INCLUDES
+
+  */
 
   require 'vendor/autoload.php';
-  include 'inc/func.php';
+
   
- 
+  /**
+
+  SETTINGS
+
+  */
+  
+  $tencodesign = 21450120;
+  $client_id = 'bb732030ffd9411c9f14da0647156e0f';
+  $count = 9;
+
+
+
+  /**
+
+  FUNCTIONS
+
+  */
+
+  function setCacheTime()
+  {
+
+    $cache = time();
+    // Write the contents back to the file
+    file_put_contents('cache.txt', $cache);
+    return true;
+
+  }
+
+  // ----------------- \\
+
+
+  function CacheTenLatestInstagramImages($response)
+  {
+   
+    $instagrams = $response->json();
+
+    $n = 0;
+    foreach ($instagrams[data] as $k => $pic)
+    {
+      $temp_array[$n]['img'] = $pic['images']['standard_resolution']['url'];
+      $temp_array[$n]['tag'] = $pic['tags'][0];
+      $n++;
+    }
+    
+
+    #$insta_array = print_r($instagrams[data],true);
+    $str = serialize($temp_array);
+
+    //create a txt-file with this array
+    file_put_contents('instagrams.txt', $str, FILE_APPEND | LOCK_EX);
+
+
+    return true;
+  }
+
+  // ----------------- \\
+
+  function handleTheError()
+  {
+    // use fallback images?
+
+    // email magnus@tenco.se?
+
+    exit("error..");
+  }
+
   /**
 
   LOGIC
 
   */
+
   // figure out the when instagram photos was fetched last time
   if ( ! $cache = file_get_contents('cache.txt'))
   {
+
     setCacheTime();
+    $ago = 0;
+
+  }
+  else
+  {
+    $ago = (time() - $cache)/3600; // how many hours ago did we fetch the instagram images  
   }
   
-  $ago = (time() - $cache)/3600;
   
-  // if there's no photots or it was more than 12h ago
+  
+  // if there's no photots or it was more than 2h ago
   // go get new photos 
-  if ($ago > 2 || ! $pics = file_get_contents('instagrams.txt'))
+  if ($ago > 2 || ! file_get_contents('instagrams.txt'))
   {
 
     // fetch some photos
     $client = new \Guzzle\Service\Client('https://api.instagram.com/v1/users/'.$tencodesign.'/media/');
     $response = $client->get('recent/?client_id='.$client_id.'&count='.$count)->send();
-    CacheTenLatestInstagramImages($response);
     
+    if ($response)
+    {
+      // write the img-array to a cache-file
+      CacheTenLatestInstagramImages($response);
 
-    // set the new cache time:
-    setCacheTime();
+      // set the new cache time:
+      setCacheTime();  
+    }
+    else
+    {
+      handleTheError();
+    }
+    
 
   }
   
   // fetch the instagram images from the local txt-file
-  $pics = file_get_contents('instagrams.txt');
-  $insta_pic = explode(",", $pics);
-  $insta_pic = array_filter($insta_pic);
+  $str = file_get_contents('instagrams.txt');
+  $insta_array = unserialize($str);
+
+  
 
   
   // debug
-  print('<pre>');
-  print_r($insta_pic);
-  print('</pre>');
+  #if ( ! is_array($insta_array))
+  #  exit("mfucker!");
+  #print('<pre>');
+  #print_r($insta_array);
+  #print('</pre>');
 
  
 
@@ -218,7 +308,7 @@
     </section>
 
 
-    <!-- The team siluette Sections
+<!-- The team siluette Sections
     ================================================== -->
     <section id="featured1" class="customer-bg hidden-xs">
 
@@ -237,6 +327,72 @@
 
     </section>
 
+
+    <?php
+    if ($insta_array)
+    {
+    ?>
+    <!-- Portfolio
+    ================================================== -->
+    <section class="section-content section-isotope separator" id="projects">
+
+      <div class="page-header text-center">
+        <h3>Projects</h3>
+        <h2>Our latest work</h2>
+      </div>
+
+      <div class="container">
+        <!--div id="filters" class="button-group text-center">
+          <button data-filter-value="*" class="active">show all</button>
+          <button data-filter-value=".websites">websites</button>
+          <button data-filter-value=".icons">icons</button>
+          <button data-filter-value=".print">print</button>
+          <button data-filter-value=".mobile">mobile</button>
+        </div-->
+        <div class="row demo-3">
+          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+           
+           <?php
+
+            foreach ($insta_array as $k=>$v)
+            {
+
+              if ( ! $v['tag'])
+              {
+                $tag = 'design';
+              }
+              else
+              {
+                $tag = $v['tag'];
+              }
+
+              echo '<div class="col-sm-6 col-md-4 portfolio-item design">
+              <figure>
+                <!-- Thumb Info -->
+                <div class="info">
+                  <h3>'.$tag.'</h3>
+                  <span>Design</span>
+                </div>
+                <!-- Thumbnail -->
+                <img src="'.$v['img'].'" alt="Prestige Portfolio Thumbnail Image">
+                <!-- Thumb links -->
+                <figcaption>
+                  <a href="'.$v['img'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://twitter.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
+                </figcaption>
+              </figure>
+            </div>';
+
+            }
+           ?>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <?php
+    }
+    ?>
 
     <!-- Testimonials
     ================================================== -->

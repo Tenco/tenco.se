@@ -1,14 +1,5 @@
 <?php
 
- /**
-
-  SETTINGS
-
-  */
-  
-  $tencodesign = 21450120;
-  $client_id = 'bb732030ffd9411c9f14da0647156e0f';
-  $count = 10;
 
  /**
 
@@ -24,6 +15,8 @@
     return true;
 
   }
+
+  // ----------------- \\
 
   function CacheTenLatestInstagramImages($response)
   {

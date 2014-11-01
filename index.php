@@ -1,3 +1,53 @@
+<?php
+
+  require 'vendor/autoload.php';
+  include 'inc/func.php';
+  
+ 
+  /**
+
+  LOGIC
+
+  */
+  // figure out the when instagram photos was fetched last time
+  if ( ! $cache = file_get_contents('cache.txt'))
+  {
+    setCacheTime();
+  }
+  
+  $ago = (time() - $cache)/3600;
+  
+  // if there's no photots or it was more than 12h ago
+  // go get new photos 
+  if ($ago > 2 || ! $pics = file_get_contents('instagrams.txt'))
+  {
+
+    // fetch some photos
+    $client = new \Guzzle\Service\Client('https://api.instagram.com/v1/users/'.$tencodesign.'/media/');
+    $response = $client->get('recent/?client_id='.$client_id.'&count='.$count)->send();
+    CacheTenLatestInstagramImages($response);
+    
+
+    // set the new cache time:
+    setCacheTime();
+
+  }
+  
+  // fetch the instagram images from the local txt-file
+  $pics = file_get_contents('instagrams.txt');
+  $insta_pic = explode(",", $pics);
+  $insta_pic = array_filter($insta_pic);
+
+  
+  // debug
+  print('<pre>');
+  print_r($insta_pic);
+  print('</pre>');
+
+ 
+
+?>
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
@@ -463,6 +513,8 @@
               <h3>Partners</h3>
               <ul class="list-unstyled">
                 <li><a href="http://sweden.service-design-network.org/" target="_new">Service Design Network</a></li>
+                <li><a target="_new" href="http://digitalpeople.se">digital people</a></li>
+                <li><a target="_new" href="http://mediaevolution.se">Media Evoulution</a></li>
                 <li><a target="_new" href="http://www.elicit.se">Elicit</a></li>
                 <li><a target="_new" href="http://www.swcg.se">Swedish Consulting Group</a></li>             
               </ul>

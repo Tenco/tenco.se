@@ -139,7 +139,7 @@
   #print_r($insta_array);
   #print('</pre>');
 
- echo $ago;
+ #echo $ago;
 
 ?>
 
@@ -408,7 +408,7 @@
 
       <div class="page-header text-center">
         <h3>Our Team</h3>
-        <h2>Tencollaboration</h2>
+        <h2>Tencollaborators</h2>
       </div>
 
       <div class="container">
@@ -459,7 +459,7 @@
                 <img class="display-pic" src="img/user-avatar2.jpg" alt="Team Member">
                   <h3>Your Face Here</h3>
                   <h4>TBD</h4>
-                  <p>If you would like to be a part of this talented team please go ahead and <a href="mailto: office@tenco.se">contact us</a>.</p>
+                  <p>If you would like to be a part of this talented team please go ahead and <a class="signup" href="#">contact us</a>.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

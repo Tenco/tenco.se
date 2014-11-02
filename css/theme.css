@@ -812,6 +812,7 @@ section .login-overlay {
 .owl-theme-featured .owl-controls .owl-buttons div:hover {
   opacity: 0.5;
 }
+
 .owl-theme-featured .owl-controls .owl-buttons div.owl-prev {
   left: 2%;
 }
@@ -1178,8 +1179,8 @@ section .login-overlay {
 .page-header {
   border-bottom: 0;
 }
-#intro-video {
-  background: url('../img/bg-videofallback.jpg');
+#intro {
+  background: url('../img/bg.jpg');
   background-size: cover;
 }
 #intro .item,
@@ -1524,7 +1525,7 @@ section.light.with-bg {
   background-size: cover;
 }
 section.dark {
-  background: #2b2d35;
+  background: #68696B;
 }
 section.dark.with-bg {
   background: url('../img/Tenco-team-with-silhouettes.png') center center no-repeat;

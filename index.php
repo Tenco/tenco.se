@@ -47,8 +47,10 @@
     $n = 0;
     foreach ($instagrams[data] as $k => $pic)
     {
+      $temp_array[$n]['thumbnail'] = $pic['images']['thumbnail']['url'];
       $temp_array[$n]['img'] = $pic['images']['standard_resolution']['url'];
       $temp_array[$n]['tag'] = $pic['tags'][0];
+      $temp_array[$n]['caption'] = $pic['caption']['text'];
       $n++;
     }
     
@@ -202,15 +204,16 @@
                 <span class="icon-bar"></span>
               </button>
               <!--h1><a class="navbar-brand scroll" href="#intro">TENCO</a></h1-->
-              <h1><a class="navbar-brand scroll" href="#intro">
+              <h1><a class="navbar-brand scroll" href="#intro-video">
                 <img class="logo" src="img/tenco-logo.png">
               </a></h1>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
-                <li><a href="#intro">Home</a></li>
+                <!--li><a href="#intro">Home</a></li-->
+                <li><a href="#feed">News</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Team</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#clients">Clients</a></li>
                 <li><a class="signup" href="#">Contact</a></li>
                 <!--li><a class="signup" href="#">Sign up</a></li-->
@@ -223,10 +226,11 @@
     </div>
 
 
-    <!-- Hero Banner
+ <!-- Hero Banner
     ================================================== -->
-    <div id="intro">
-        <div class="item background-cover" style="background: url('img/bg.jpg')">
+    <div id="intro-video" style="background-image: url( 'img/bg.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=knuv8bZKOWE',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
+        <div class="item">
           <div class="container">
             <div class="row">
               <div class="carousel-caption-center colour-white">
@@ -242,9 +246,93 @@
           <div class="overlay-bg"></div>
         </div>
     </div>
+    <!-- Hero Banner
+    ================================================== -->
+    <!--div id="intro">
+        <div class="item background-cover" style="background: url('img/bg.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="carousel-caption-center colour-white">
+                <h2>We offer</h2>
+                <h1>Service Innovation and Improvement.</h1>
+                <p>With Service Design we put Your Customers in the Center.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary signup" href="#" role="button">
+                  Get in touch</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="overlay-bg"></div>
+        </div>
+    </div-->
 
 
 
+<?php
+    if ($insta_array)
+    {
+    ?>
+    <!-- Portfolio
+    ================================================== -->
+    <section class="section-content section-isotope separator" id="feed">
+
+      <div class="page-header text-center">
+        <h3>Feed</h3>
+        <h2>What's happening...</h2>
+      </div>
+
+      <div class="container">
+        <!--div id="filters" class="button-group text-center">
+          <button data-filter-value="*" class="active">show all</button>
+          <button data-filter-value=".websites">websites</button>
+          <button data-filter-value=".icons">icons</button>
+          <button data-filter-value=".print">print</button>
+          <button data-filter-value=".mobile">mobile</button>
+        </div-->
+        <div class="row demo-3">
+          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+           
+           <?php
+
+            foreach ($insta_array as $k=>$v)
+            {
+
+              if ( ! $v['tag'])
+              {
+                $tag = 'design';
+              }
+              else
+              {
+                $tag = $v['tag'];
+              }
+
+              echo '<div class="col-sm-6 col-md-4 portfolio-item design">
+              <figure>
+                <!-- Thumb Info -->
+                <div class="info">
+                  <h3>'.$tag.'</h3>
+                  <span>'.substr($v['caption'],0,25).'...</span>
+                </div>
+                <!-- Thumbnail -->
+                <img src="'.$v['img'].'" alt="'.$v['caption'].'">
+                <!-- Thumb links -->
+                <figcaption>
+                  <a href="'.$v['img'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://instagram.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
+                </figcaption>
+              </figure>
+            </div>';
+
+            }
+           ?>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <?php
+    }
+    ?>
     <!-- About Section
     ================================================== -->
     <section id="about" class="content text-center light">
@@ -308,202 +396,87 @@
     </section>
 
 
-<!-- The team siluette Sections
+
+    
+
+    <!-- Team
     ================================================== -->
-    <section id="featured1" class="customer-bg hidden-xs">
+    <section id="team" class="dark">
+
+      <div class="page-header text-center">
+        <h3>Our Team</h3>
+        <h2>Tencollaboration</h2>
+      </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-5 overlay-text">
-            <div class="vertical-align">
-              <!--h2>Work to your own schedule</h2>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p-->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--div class="overlay-bg black"></div-->
-
-    </section>
-
-
-    <?php
-    if ($insta_array)
-    {
-    ?>
-    <!-- Portfolio
-    ================================================== -->
-    <section class="section-content section-isotope separator" id="projects">
-
-      <div class="page-header text-center">
-        <h3>Projects</h3>
-        <h2>Our latest work</h2>
-      </div>
-
-      <div class="container">
-        <!--div id="filters" class="button-group text-center">
-          <button data-filter-value="*" class="active">show all</button>
-          <button data-filter-value=".websites">websites</button>
-          <button data-filter-value=".icons">icons</button>
-          <button data-filter-value=".print">print</button>
-          <button data-filter-value=".mobile">mobile</button>
-        </div-->
-        <div class="row demo-3">
-          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
-           
-           <?php
-
-            foreach ($insta_array as $k=>$v)
-            {
-
-              if ( ! $v['tag'])
-              {
-                $tag = 'design';
-              }
-              else
-              {
-                $tag = $v['tag'];
-              }
-
-              echo '<div class="col-sm-6 col-md-4 portfolio-item design">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>'.$tag.'</h3>
-                  <span>Design</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="'.$v['img'].'" alt="Prestige Portfolio Thumbnail Image">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="'.$v['img'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://twitter.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>';
-
-            }
-           ?>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <?php
-    }
-    ?>
-
-    <!-- Testimonials
-    ================================================== -->
-    <section id="testimonials" class="dark">
-
-      <div class="page-header text-center">
-        <h3>The Team</h3>
-        <h2>Meet the tenco team</h2>
-      </div>
-
-      <div class="container">
-
-        <div class='row'>
-          <div class='col-md-offset-2 col-md-8'>
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-              <!-- Bottom Carousel Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                <li data-target="#quote-carousel" data-slide-to="2"></li>
-                <li data-target="#quote-carousel" data-slide-to="3"></li>
-              </ol>
-              
-              <!-- Carousel Slides / Quotes -->
-              <div class="carousel-inner">
-              
-                <!-- Adriana -->
-                <div class="item active">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/adriana.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Adriana is a design manager specialized in facilitating co-creation and prototyping.</p>
-                        <small>Adriana Azinovic - <a href="mailto:adriana@tenco.se">adriana@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- Anna -->
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/anna.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Anna is a communication designer visualizing complexity in a simple and userfriendly way.</p>
-                        <small>Anna Kapferer - <a href="mailto: info@tenco.se">anna@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- Emma -->
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/emma.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Emma is a project manager with experience from marketing and product development</p>
-                        <small>Emma Jacobsen - <a href="mailto:info@tenco.se">emma@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- Magnus -->
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/magnus.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
-                        <small>Magnus Nilsson - <a href="mailto:magnus@tenco.se">magnus@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
+          <div class="col-md-12">
+            <div id="owl-example" class="owl-carousel">
+              <div class="item">
+                <img class="display-pic" src="img/adriana.png" alt="Co-founder">
+                  <h3>Adriana Azinovic</h3>
+                  <h4>Design Manager</h4>
+                  <p>Adriana is a design manager specialized in facilitating co-creation and prototyping.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
-              
-              <!-- Carousel Buttons Next/Prev -->
-              <a data-slide="prev" href="#quote-carousel" class="left carousel-control visible-md visible-lg"><i class="fa fa-chevron-left"></i></a>
-              <a data-slide="next" href="#quote-carousel" class="right carousel-control  visible-md visible-lg"><i class="fa fa-chevron-right"></i></a>
-            </div>                          
-          </div>
-        </div>
-        </div>
-      </div>
+              <div class="item">
+                <img class="display-pic" src="img/magnus.png" alt="Co-founder">
+                  <h3>Magnus Nilsson</h3>
+                  <h4>Service Designer</h4>
+                  <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/anna.png" alt="Tencollaborator">
+                  <h3>Anna Kapferer</h3>
+                  <h4>Communication Designer</h4>
+                  <p>Anna is a communication designer visualizing complexity in a simple and userfriendly way.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/emma.png" alt="Tencollaborator">
+                  <h3>Emma Jacobsen</h3>
+                  <h4>PM & Marketing</h4>
+                  <p>Emma is a project manager with experience from marketing and product development.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/user-avatar2.jpg" alt="Team Member">
+                  <h3>Your Face Here</h3>
+                  <h4>TBD</h4>
+                  <p>If you would like to be a part of this talented team please go ahead and <a href="mailto: office@tenco.se">contact us</a>.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <!--div class="item">
+                <img class="display-pic" src="img/user-avatar3.jpg" alt="Team Member">
+                  <h3>Adrian Filloti</h3>
+                  <h4>Account Manager</h4>
+                  <p>Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat.</p>
+                  <a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a>
+              </div-->
 
-    </section>
-
-    <!-- The team siluette Sections
-    ================================================== -->
-    <section id="featured1" class="dark with-bg hidden-xs">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5 overlay-text">
-            <div class="vertical-align">
-              <!--h2>Work to your own schedule</h2>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p-->
             </div>
           </div>
         </div>
       </div>
-
-      <!--div class="overlay-bg black"></div-->
 
     </section>
 
@@ -568,6 +541,101 @@
 
     </section>
 
+        <!-- Testimonials
+    ================================================== -->
+    <!--
+    <section id="testimonials" class="dark">
+
+      <div class="page-header text-center">
+        <h3>Testamonilas</h3>
+        <h2>OUR CLIENTS LOVE US</h2>
+      </div>
+
+      <div class="container">
+
+        <div class='row'>
+          <div class='col-md-offset-2 col-md-8'>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+              
+              <ol class="carousel-indicators">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                <li data-target="#quote-carousel" data-slide-to="2"></li>
+                <li data-target="#quote-carousel" data-slide-to="3"></li>
+              </ol>
+              
+              
+              <div class="carousel-inner">
+              
+                
+                <div class="item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/adriana.png">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Adriana is a design manager specialized in facilitating co-creation and prototyping.</p>
+                        <small>Adriana Azinovic - <a href="mailto:adriana@tenco.se">adriana@tenco.se</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/anna.png">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Anna is a communication designer visualizing complexity in a simple and userfriendly way.</p>
+                        <small>Anna Kapferer - <a href="mailto: info@tenco.se">anna@tenco.se</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/emma.png">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Emma is a project manager with experience from marketing and product development</p>
+                        <small>Emma Jacobsen - <a href="mailto:info@tenco.se">emma@tenco.se</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-circle" src="img/magnus.png">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
+                        <small>Magnus Nilsson - <a href="mailto:magnus@tenco.se">magnus@tenco.se</a></small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              
+              
+              <a data-slide="prev" href="#quote-carousel" class="left carousel-control visible-md visible-lg"><i class="fa fa-chevron-left"></i></a>
+              <a data-slide="next" href="#quote-carousel" class="right carousel-control  visible-md visible-lg"><i class="fa fa-chevron-right"></i></a>
+            </div>                          
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+  -->
     <!-- Clients
     ================================================== -->
     <!--section id="clients">
@@ -659,7 +727,8 @@
             <div class="col-sm-3 col-md-3">
               <h3>The Site</h3>
               <ul class="list-unstyled">
-                <li><a href="#intro">Home</a></li>
+                <li><a href="#intro-video">Home</a></li>
+                <li><a href="#feed">News</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#testimonials">Team</a></li>
                 <li><a href="#clients">Clients</a></li>
@@ -727,6 +796,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
 		<script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollReveal.js"></script>
     <script src="js/jquery.scrollTo.js" defer="defer"></script>
@@ -741,9 +811,11 @@
     <script>
 
       $(document).ready(function(){
+        $(".player").mb_YTPlayer();
         isotope();
         signupOverlay();
       });
+   
 
       /* google analytics */
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

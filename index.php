@@ -42,6 +42,7 @@
   function CacheTenLatestInstagramImages($response)
   {
    
+
     $instagrams = $response->json();
 
     $n = 0;
@@ -58,8 +59,9 @@
     #$insta_array = print_r($instagrams[data],true);
     $str = serialize($temp_array);
 
-    //create a txt-file with this array
-    file_put_contents('instagrams.txt', $str, FILE_APPEND | LOCK_EX);
+    // create a txt-file with this array
+    // or overwrite it if existing
+    file_put_contents('instagrams.txt', $str);
 
 
     return true;
@@ -73,7 +75,8 @@
 
     // email magnus@tenco.se?
 
-    exit("error..");
+    #exit("error..");
+    return;
   }
 
   /**
@@ -136,7 +139,7 @@
   #print_r($insta_array);
   #print('</pre>');
 
- 
+ echo $ago;
 
 ?>
 

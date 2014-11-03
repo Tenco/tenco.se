@@ -1616,8 +1616,8 @@ section .overlay-text {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: #dadada;
-  box-shadow: 30px 0 #dadada, -30px 0 #dadada;
+  *background: #dadada;
+  *box-shadow: 30px 0 #dadada, -30px 0 #dadada;
 }
 .separator::after {
   bottom: -25px;

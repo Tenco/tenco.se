@@ -310,7 +310,7 @@
         </div>
 <!-- -->
         <div class="row demo-3 hidden-lg hidden-md hidden-sm"> 
-          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+         
            
            <?php
             $n = 0;
@@ -328,15 +328,12 @@
               }
 
               echo '<div class="col-sm-6 col-md-4 portfolio-item design">
-              <figure>
-                <!-- Thumbnail -->
-                <img src="'.$v['img'].'" alt="'.$v['caption'].'">
-              </figure>
+                <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
             </div>';
               $n++;
             }
            ?>
-          </div>
+          
         </div>
 <!-- -->
       </div>

@@ -249,29 +249,8 @@
           <div class="overlay-bg"></div>
         </div>
     </div>
-    <!-- Hero Banner
-    ================================================== -->
-    <!--div id="intro">
-        <div class="item background-cover" style="background: url('img/bg.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="carousel-caption-center colour-white">
-                <h2>We offer</h2>
-                <h1>Service Innovation and Improvement.</h1>
-                <p>With Service Design we put Your Customers in the Center.</p>
-                <p>
-                  <a class="btn btn-lg btn-primary signup" href="#" role="button">
-                  Get in touch</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="overlay-bg"></div>
-        </div>
-    </div-->
 
-
-
-<?php
+    <?php
     if ($insta_array)
     {
     ?>
@@ -292,7 +271,7 @@
           <button data-filter-value=".print">print</button>
           <button data-filter-value=".mobile">mobile</button>
         </div-->
-        <div class="row demo-3">
+        <div class="row demo-3 hidden-xs"> <!-- byt ut denna i sm-devices till att visa de 3 senaste instagrams utan figcaption! -->
           <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
            
            <?php
@@ -329,6 +308,37 @@
            ?>
           </div>
         </div>
+<!-- -->
+        <div class="row demo-3 hidden-lg hidden-md hidden-sm"> 
+          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+           
+           <?php
+            $n = 0;
+            foreach ($insta_array as $k=>$v)
+            {
+              if ($n == 3)
+                  continue;
+              if ( ! $v['tag'])
+              {
+                $tag = 'design';
+              }
+              else
+              {
+                $tag = $v['tag'];
+              }
+
+              echo '<div class="col-sm-6 col-md-4 portfolio-item design">
+              <figure>
+                <!-- Thumbnail -->
+                <img src="'.$v['img'].'" alt="'.$v['caption'].'">
+              </figure>
+            </div>';
+              $n++;
+            }
+           ?>
+          </div>
+        </div>
+<!-- -->
       </div>
 
     </section>

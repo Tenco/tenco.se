@@ -82,8 +82,13 @@ function owlCarousel() {
       theme: "owl-theme-featured"
       
     }); 
-}
 
+     $("#owl").owlCarousel({
+      lazyLoad : true,
+      items: 5,
+      theme: "owl-theme-main"
+    }); 
+}
 
 
 /* --- Tooltips ------------------- */

@@ -271,7 +271,7 @@
           <button data-filter-value=".print">print</button>
           <button data-filter-value=".mobile">mobile</button>
         </div-->
-        <div class="row demo-3 hidden-xs"> <!-- byt ut denna i sm-devices till att visa de 3 senaste instagrams utan figcaption! -->
+        <div class="row demo-3 hidden-xs"> 
           <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
            
            <?php
@@ -312,26 +312,49 @@
         <div class="row demo-3 hidden-lg hidden-md hidden-sm"> 
          
            
+
+          <!-- new stuff -->
+        
+          <div class="col-md-12">
+            <div id="owl" class="owl-carousel">
+              
+              <?php
+            
+              $n = 0;
+              foreach ($insta_array as $k=>$v)
+              {
+                if ($n == 9)
+                  continue;
+              echo '<div class="item">
+                  <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px; height: 242px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
+                  <p style="color:#F26F21;">'.$v['caption'].'</p>
+              </div>';
+              
+              $n++;
+              }
+              ?>
+            </div>
+          </div>
+        
+      
+
+          <!-- new stuff ends -->
+
+
            <?php
+            /*
             $n = 0;
             foreach ($insta_array as $k=>$v)
             {
               if ($n == 3)
                   continue;
-              if ( ! $v['tag'])
-              {
-                $tag = 'design';
-              }
-              else
-              {
-                $tag = $v['tag'];
-              }
 
-              echo '<div class="col-sm-6 col-md-4 portfolio-item design">
-                <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
-            </div>';
+                echo '<div class="col-sm-6 col-md-4 portfolio-item design">
+                      <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
+                      </div>';
               $n++;
             }
+            */
            ?>
           
         </div>
@@ -551,165 +574,7 @@
 
     </section>
 
-        <!-- Testimonials
-    ================================================== -->
-    <!--
-    <section id="testimonials" class="dark">
-
-      <div class="page-header text-center">
-        <h3>Testamonilas</h3>
-        <h2>OUR CLIENTS LOVE US</h2>
-      </div>
-
-      <div class="container">
-
-        <div class='row'>
-          <div class='col-md-offset-2 col-md-8'>
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-              
-              <ol class="carousel-indicators">
-                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                <li data-target="#quote-carousel" data-slide-to="2"></li>
-                <li data-target="#quote-carousel" data-slide-to="3"></li>
-              </ol>
-              
-              
-              <div class="carousel-inner">
-              
-                
-                <div class="item active">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/adriana.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Adriana is a design manager specialized in facilitating co-creation and prototyping.</p>
-                        <small>Adriana Azinovic - <a href="mailto:adriana@tenco.se">adriana@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/anna.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Anna is a communication designer visualizing complexity in a simple and userfriendly way.</p>
-                        <small>Anna Kapferer - <a href="mailto: info@tenco.se">anna@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/emma.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Emma is a project manager with experience from marketing and product development</p>
-                        <small>Emma Jacobsen - <a href="mailto:info@tenco.se">emma@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                
-                <div class="item">
-                  <blockquote>
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/magnus.png">
-                      </div>
-                      <div class="col-sm-9">
-                        <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
-                        <small>Magnus Nilsson - <a href="mailto:magnus@tenco.se">magnus@tenco.se</a></small>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-              </div>
-              
-              
-              <a data-slide="prev" href="#quote-carousel" class="left carousel-control visible-md visible-lg"><i class="fa fa-chevron-left"></i></a>
-              <a data-slide="next" href="#quote-carousel" class="right carousel-control  visible-md visible-lg"><i class="fa fa-chevron-right"></i></a>
-            </div>                          
-          </div>
-        </div>
-        </div>
-      </div>
-
-    </section>
-  -->
-    <!-- Clients
-    ================================================== -->
-    <!--section id="clients">
-
-      <div class="page-header text-center">
-        <h3>Tenco</h3>
-        <h2>Trusted by...</h2>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="owl-example" class="owl-carousel">
-              <div class="item">
-                  <img src="img/clients/tp.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/jv.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/skanetrafiken.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/fujitsu.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/rs.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/besikta.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/primarvarden.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/elicit.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/it.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/rotary.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/wme.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/kiliam.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/vf.png">
-              </div>
-              <div class="item">
-                  <img src="img/clients/jfl.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section-->
-
-
-    <!-- Footer
+   <!-- Footer
     ================================================== -->
     <footer id="contact" class="footer">
 

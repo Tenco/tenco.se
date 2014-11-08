@@ -5,8 +5,21 @@
 
   */
 
-	require 'vendor/autoload.php';
- 
+  require 'vendor/autoload.php';
+  require 'inc/func.php';
+
+  
+  /**
+
+  SETTINGS
+
+  */
+  
+  $tencodesign = 21450120;
+  $client_id = 'bb732030ffd9411c9f14da0647156e0f';
+  $count = 9;
+
+
 
   /**
 
@@ -14,10 +27,49 @@
 
   */
 
+  $ago = cacheTime();
+  
+  
+  // if there's no photots or it was more than 2h ago
+  // go get new photos 
+  // stristr($_SERVER['SERVER_NAME'], "localhost") ..
+  if ($ago > 2 || ! file_get_contents('instagrams.txt'))
+  {
 
-	$feed = new tenco\tencoFeed();
- 	$str = $feed->getTenLatestInstagramPhonos();
- 	$insta_array = unserialize($str);
+
+    if ($response = fetchSomePhotos($tencodesign, $client_id, $count))
+    {
+
+      // write the img-array to a cache-file
+      CacheTenLatestInstagramImages($response);
+
+      // set the new cache time:
+      setCacheTime();  
+    }
+    else
+    {
+      handleTheError();
+    }
+    
+
+  }
+
+  
+  // fetch the instagram images from the local txt-file
+  $str = file_get_contents('instagrams.txt');
+  $insta_array = unserialize($str);
+
+  
+
+  
+  // debug
+  #if ( ! is_array($insta_array))
+  #  exit("mfucker!");
+  #print('<pre>');
+  #print_r($insta_array);
+  #print('</pre>');
+
+ #echo $ago;
 
 ?>
 

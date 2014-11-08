@@ -1,5 +1,9 @@
 {
+	"autoload": {
+        "psr-4": {"tenco\\": "inc/"}
+    },
     "require": {
         "guzzle/guzzle": "3.9.2"
     }
+
 }

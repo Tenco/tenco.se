@@ -8,11 +8,14 @@
   */
 
 
-  function fetchSomePhotos()
+  function fetchSomePhotos($tencodesign, $client_id, $count)
   {
+
     // fetch some photos
     $client = new \Guzzle\Service\Client('https://api.instagram.com/v1/users/'.$tencodesign.'/media/');
+
     $response = $client->get('recent/?client_id='.$client_id.'&count='.$count)->send();
+
     return $response;
   }
 

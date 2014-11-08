@@ -36,8 +36,10 @@
   if ($ago > 2 || ! file_get_contents('instagrams.txt'))
   {
 
-    if ($response = fetchSomePhotos())
+
+    if ($response = fetchSomePhotos($tencodesign, $client_id, $count))
     {
+
       // write the img-array to a cache-file
       CacheTenLatestInstagramImages($response);
 
@@ -51,6 +53,7 @@
     
 
   }
+
   
   // fetch the instagram images from the local txt-file
   $str = file_get_contents('instagrams.txt');
@@ -301,21 +304,21 @@
             <div class="icon-wrapper">
               <i class="fa fa-users icon-large"></i>
             </div>
-            <h3>1. Discover the outside-in perspective</h3>
+            <h3 style="line-height:25px;">1. Discover the outside-in perspective</h3>
             <p>We gather data on your customer experience and behaviour to determine the strategy for your business goals.</p>
           </div>
           <div class="col-sm-4 text-center overlay-text icons">
             <div class="icon-wrapper">
               <i class="fa fa-lightbulb-o icon-large"></i>
             </div>
-            <h3>2. Evaluate during innovation and improvement</h3>
+            <h3 style="line-height:25px;">2. Evaluate during innovation and improvement</h3>
             <p>We innovate by co-creation and involve your stakeholders in testing designs for efficient decisions forward.</p>
           </div>
           <div class="col-sm-4 text-center overlay-text icons">
             <div class="icon-wrapper">
               <i class="fa fa-bar-chart-o icon-large"></i>
             </div>
-            <h3>3. Deploy quality assured services</h3>
+            <h3 style="line-height:25px;">3. Deploy quality assured services</h3>
             <p>By involving and testing early in the process we make sure you are on track with your business improvements and deliver quality.</p>
           </div>
         </div><!-- /.row -->

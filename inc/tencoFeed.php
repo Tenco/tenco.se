@@ -24,15 +24,12 @@ class tencoFeed {
 	{
 		$ago = $this->cacheTime();
 
-		// cache more than 2 hours?
+		// cache more than 2 hours old or file missing?
 		if ($ago > 2 || ! file_get_contents('instagrams.txt'))
   		{
 
-		    if ($this->fetchSomePhotos())
+		    if ($this->CacheTenLatestInstagramImages())
 		    {
-
-				// write the img-array to a cache-file
-		     	$this->CacheTenLatestInstagramImages($response);
 
 		      	// set the new cache time:
 		      	$this->setCacheTime();  
@@ -41,7 +38,7 @@ class tencoFeed {
 		    else
 		    {
 				#$this->handleTheError();
-		    	$response = NULL;
+		    	return false;
 		    }
 		    
 

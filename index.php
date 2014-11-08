@@ -14,9 +14,9 @@
 
   */
 
-
+  	// class found in inc/tencoFeed.php
 	$feed = new tenco\tencoFeed();
- 	$str = $feed->getTenLatestInstagramPhonos();
+ 	$str = $feed->getTenLatestInstagramPhotos();
  	$insta_array = unserialize($str);
 
 ?>
@@ -193,18 +193,18 @@
             <div id="owl" class="owl-carousel">
               
               <?php
-            
-              $n = 0;
-              foreach ($insta_array as $k=>$v)
-              {
-                if ($n == 9)
-                  continue;
-              echo '<div class="item">
-                  <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px; height: 262px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
-                  <p style="color:#F26F21; margin:0;">'.$v['caption'].'</p>
-              </div>';
-              
-              $n++;
+				reset($insta_array);
+				$n = 0;
+				foreach ($insta_array as $k=>$v)
+				{
+				if ($n == 9)
+				  continue;
+				echo '<div class="item">
+				  <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px; height: 262px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
+				  <p style="color:#F26F21; margin:0;">'.$v['caption'].'</p>
+				</div>';
+
+				$n++;
               }
               ?>
             </div>

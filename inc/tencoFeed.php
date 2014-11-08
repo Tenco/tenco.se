@@ -1,13 +1,19 @@
 <?php namespace tenco;
 
-	
 use \Guzzle\Service as Guzzle;
+
+
+	/**
+	*
+	* 	This class is autoloaded using psr-4 by setting up
+	*	autoload in composer.json
+	*/	
 
 class tencoFeed {
 
 	/**
 	*
-	*
+	* 	set variables
 	*
 	*/	
 	private $tencodesign = 21450120;
@@ -17,10 +23,10 @@ class tencoFeed {
 
 	/**
 	*
-	*
-	*
+	* 	return serialized image info
+	* 	from local txt-file
 	*/
-	public function getTenLatestInstagramPhonos()
+	public function getTenLatestInstagramPhotos()
 	{
 		$ago = $this->cacheTime();
 
@@ -53,17 +59,17 @@ class tencoFeed {
 
   	/**
 	*
-	*
-	*
+	* 	fetch latest photos from 
+	*	tenco instagram account using Guzzle
 	*/
 	public function fetchSomePhotos()
 	{
-    // fetch some photos
-    $client = new Guzzle\Client('https://api.instagram.com/v1/users/'.$this->tencodesign.'/media/');
+		// fetch some photos
+		$client = new Guzzle\Client('https://api.instagram.com/v1/users/'.$this->tencodesign.'/media/');
 
-    $response = $client->get('recent/?client_id='.$this->client_id.'&count='.$this->count)->send();
+		$response = $client->get('recent/?client_id='.$this->client_id.'&count='.$this->count)->send();
 
-    return $response;
+		return $response;
 
   	}
 
@@ -75,10 +81,11 @@ class tencoFeed {
   	public function setCacheTime()
   	{
 
-    $cache = time();
-    // Write the contents back to the file
-    file_put_contents('cache.txt', $cache);
-    return true;
+		$cache = time();
+		// Write the contents back to the file
+		file_put_contents('cache.txt', $cache);
+		
+		return true;
 
   	}
 
@@ -127,8 +134,6 @@ class tencoFeed {
 	      $n++;
 	    }
 	    
-
-	    #$insta_array = print_r($instagrams[data],true);
 	    $str = serialize($temp_array);
 
 	    // create a txt-file with this array
@@ -151,8 +156,7 @@ class tencoFeed {
 
 	    // email magnus@tenco.se?
 
-	    #exit("error..");
-	    return;
+	    return false;
   	}
 
 }

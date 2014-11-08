@@ -5,8 +5,8 @@ use \Guzzle\Service as Guzzle;
 
 	/**
 	*
-	* 	This class is autoloaded using psr-4 by setting up
-	*	autoload in composer.json
+	* 	Class is autoloaded using psr-4
+	*	autoload set up in composer.json
 	*/	
 
 class tencoFeed {
@@ -19,19 +19,21 @@ class tencoFeed {
 	private $tencodesign = 21450120;
   	private $client_id = 'bb732030ffd9411c9f14da0647156e0f';
   	private $count = 9;
+  	private $filename = 'instagrams.txt';
+  	private $cache_filename = 'cache.txt';
 
 
 	/**
 	*
 	* 	return serialized image info
-	* 	from local txt-file
+	* 	from locally cached txt-file
 	*/
 	public function getTenLatestInstagramPhotos()
 	{
 		$ago = $this->cacheTime();
 
 		// cache more than 2 hours old or file missing?
-		if ($ago > 2 || ! file_get_contents('instagrams.txt'))
+		if ($ago > 2 || ! file_get_contents($this->filename))
   		{
 
 		    if ($this->CacheTenLatestInstagramImages())
@@ -52,7 +54,7 @@ class tencoFeed {
 		
 			
 		// just fetch the text-file
-		$response = file_get_contents('instagrams.txt');
+		$response = file_get_contents($this->filename);
 
 		return $response;
 	}
@@ -83,7 +85,7 @@ class tencoFeed {
 
 		$cache = time();
 		// Write the contents back to the file
-		file_put_contents('cache.txt', $cache);
+		file_put_contents($this->cache_filename, $cache);
 		
 		return true;
 
@@ -98,7 +100,7 @@ class tencoFeed {
   	public function cacheTime()
   	{
 	    // figure out the when instagram photos was fetched last time
-	    if ( ! $cache = file_get_contents('cache.txt'))
+	    if ( ! $cache = file_get_contents($this->cache_filename))
 	    {
 
 	      $this->setCacheTime();
@@ -138,7 +140,7 @@ class tencoFeed {
 
 	    // create a txt-file with this array
 	    // or overwrite it if existing
-	    file_put_contents('instagrams.txt', $str);
+	    file_put_contents($this->filename, $str);
 
 
 	    return true;

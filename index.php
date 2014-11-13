@@ -312,7 +312,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-md-offset-2">
             <div id="owl-example" class="owl-carousel">
               <div class="item">
                 <img class="display-pic" src="img/adriana.png" alt="Co-founder">
@@ -329,26 +329,6 @@
                   <h3>Magnus Nilsson</h3>
                   <h4>Service Designer</h4>
                   <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/anna.png" alt="Tencollaborator">
-                  <h3>Anna Kapferer</h3>
-                  <h4>Communication Designer</h4>
-                  <p>Anna is a communication designer visualizing complexity in a simple and userfriendly way.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/emma.png" alt="Tencollaborator">
-                  <h3>Emma Jacobsen</h3>
-                  <h4>PM & Marketing</h4>
-                  <p>Emma is a project manager with experience from marketing and product development.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

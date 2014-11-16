@@ -36,24 +36,15 @@ class tencoFeed {
 		if ($ago > 2 || ! file_get_contents($this->filename))
   		{
 
-		    if ($this->CacheTenLatestInstagramImages())
-		    {
+		    if ( ! $this->CacheTenLatestInstagramImages()) return false;
 
-		      	// set the new cache time:
-		      	$this->setCacheTime();  
-
-		    }
-		    else
-		    {
-				#$this->handleTheError();
-		    	return false;
-		    }
-		    
+		    // set the new cache time:
+			$this->setCacheTime();  
 
 		}
 		
 			
-		// just fetch the text-file
+		// fetch the text-file
 		$response = file_get_contents($this->filename);
 
 		return $response;

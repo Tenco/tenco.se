@@ -312,7 +312,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-md-offset-2">
+          <div class="col-md-12 col-md-offset-1">
             <div id="owl-example" class="owl-carousel">
               <div class="item">
                 <img class="display-pic" src="img/adriana.png" alt="Co-founder">
@@ -334,6 +334,13 @@
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
+                <div class="item">
+                    <img class="display-pic" src="img/christine.png" alt="Tencollaborator">
+                    <h3>Christine Kiliam</h3>
+                    <h4>STRATEGIC FACILITATOR</h4>
+                    <p>Christine is a senior communication expert supporting management teams and individuals in change processes.</p>
+                </div>
+
               <div class="item">
                 <img class="display-pic" src="img/user-avatar2.jpg" alt="Team Member">
                   <h3>Your Face Here</h3>

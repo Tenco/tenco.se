@@ -336,7 +336,7 @@
               </div>
                 <div class="item">
                     <img class="display-pic" src="img/christine.png" alt="Tencollaborator">
-                    <h3>Christine Kiliam</h3>
+                    <h3>Christine Kiliam Hinsell</h3>
                     <h4>STRATEGIC FACILITATOR</h4>
                     <p>Christine is a senior communication expert supporting management teams and individuals in change processes.</p>
                 </div>
@@ -424,7 +424,9 @@
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/jfl.png" class="client-logo img-responsive">
           </div>
-          
+            <div class="col-md-2 col-xs-4">
+                <img src="img/clients/amato.png" class="client-logo img-responsive">
+            </div>
         </div> <!-- /row -->
       </div> <!-- /container -->
 

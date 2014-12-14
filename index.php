@@ -111,8 +111,7 @@
     ================================================== -->
     <div id="intro-video" style="background-image: url( 'img/bg.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=knuv8bZKOWE',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
-        <divboots
-            class="item">
+        <div class="item">
           <div class="container">
             <div class="row">
               <div class="carousel-caption-center colour-white">

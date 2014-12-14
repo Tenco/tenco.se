@@ -111,7 +111,8 @@
     ================================================== -->
     <div id="intro-video" style="background-image: url( 'img/bg.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=knuv8bZKOWE',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
-        <div class="item">
+        <divboots
+            class="item">
           <div class="container">
             <div class="row">
               <div class="carousel-caption-center colour-white">
@@ -186,7 +187,8 @@
            ?>
           </div>
         </div>
-<!-- -->
+
+        <!-- for mobile devices -->
         <div class="row demo-3 hidden-lg hidden-md hidden-sm"> 
          
            <div class="col-md-12">
@@ -201,7 +203,7 @@
 				  continue;
 				echo '<div class="item">
 				  <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px; height: 262px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
-				  <p style="color:#F26F21; margin:0;">'.$v['caption'].'</p>
+				  <p style="color:#000; margin:0;">'.$v['caption'].'</p>
 				</div>';
 
 				$n++;
@@ -209,25 +211,9 @@
               ?>
             </div>
           </div>
-        
-           <?php
-            /*
-            $n = 0;
-            foreach ($insta_array as $k=>$v)
-            {
-              if ($n == 3)
-                  continue;
+          <!-- end small devices -->
 
-                echo '<div class="col-sm-6 col-md-4 portfolio-item design">
-                      <img class="img-responsive" style="margin-bottom:20px; border-radius: 4px;" src="'.$v['img'].'" alt="'.$v['caption'].'">
-                      </div>';
-              $n++;
-            }
-            */
-           ?>
-          
         </div>
-<!-- -->
       </div>
 
     </section>

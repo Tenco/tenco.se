@@ -32,7 +32,7 @@ $to = 'office@tenco.se';
 $email_subject = "Contact form submitted on tenco.se";
 $email_body = "A new message from tenco.se. \n\n".
 				  "Email: $email_address\n Message: \n $message";
-$headers = "From: $to\n";
+$headers = "From: $email_address\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 

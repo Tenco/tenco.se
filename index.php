@@ -171,13 +171,13 @@
                 <!-- Thumb Info -->
                 <div class="info">
                   <h3>'.$tag.'</h3>
-                  <span>'.substr($v['caption'],0,25).'...</span>
+                  <span>'.substr($v['caption'],0,35).'...</span>
                 </div>
                 <!-- Thumbnail -->
                 <img src="'.$v['img'].'" alt="'.$v['caption'].'">
                 <!-- Thumb links -->
                 <figcaption>
-                  <a href="'.$v['img'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://instagram.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
+                  <a href="'.$v['img'].'" alt="'.$v['caption'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://instagram.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
                 </figcaption>
               </figure>
             </div>';

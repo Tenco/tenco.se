@@ -177,7 +177,7 @@
                 <img src="'.$v['img'].'" alt="'.$v['caption'].'">
                 <!-- Thumb links -->
                 <figcaption>
-                  <a href="'.$v['img'].'" alt="'.$v['caption'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="Preview"><i class="fa fa-plus"></i></a><a href="https://instagram.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
+                  <a href="'.$v['img'].'" alt="'.$v['caption'].'" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="View"><i class="fa fa-plus"></i></a><a href="https://instagram.com/tencodesign" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open instagram"><i class="fa fa-external-link"></i></a>
                 </figcaption>
               </figure>
             </div>';

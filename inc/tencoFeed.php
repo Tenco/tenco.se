@@ -85,8 +85,8 @@ class tencoFeed {
   	
   	/**
 	*
-	*
-	*
+	* Get the cache time from the file cache.txt
+	* return the ago time in hours
 	*/
   	public function cacheTime()
   	{

@@ -313,7 +313,17 @@
                 <img class="display-pic" src="img/magnus.png" alt="Co-founder">
                   <h3>Magnus Nilsson</h3>
                   <h4>Service Designer</h4>
-                  <p>Magnus has more than 15 yrs of experience from digital service design on all kinds of devices.</p>
+                  <p>Magnus is a conceptual designer using his strenghts as a full stack developer with a passion for research and requirement analysis.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/stefan.jpg" alt="Co-founder">
+                  <h3>Stefan Palmqvist</h3>
+                  <h4>Service Designer</h4>
+                  <p>Stefan is a natural storyteller with background in brand strategy, advertising and identity design.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

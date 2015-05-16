@@ -303,7 +303,7 @@
                 <img class="display-pic" src="img/adriana.png" alt="Co-founder">
                   <h3>Adriana Azinovic</h3>
                   <h4>Design Manager</h4>
-                  <p>Adriana is a design manager specialized in facilitating co-creation and prototyping.</p>
+                  <p>Adriana is specialized in co-creation with stakeholders mixing business analysis, customer experience and service design tools.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

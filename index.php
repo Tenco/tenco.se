@@ -19,6 +19,11 @@
  	$str = $feed->getTenLatestInstagramPhotos();
  	$insta_array = unserialize($str);
 
+
+  // set the Jerker-message:
+  $limit = "2015-07-31 00:00:00.0";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -320,7 +325,25 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
-                <img class="display-pic" src="img/stefan.jpg" alt="Co-founder">
+                <img class="display-pic" src="img/jerker.png" alt="Tencollaborator">
+                  <h3>Jerker Knape</h3>
+                  <h4>Service Designer</h4> 
+                  <?php
+                  
+                    if((time()) < strtotime($limit))
+                    {
+                      echo "(starting August)";  
+                    }
+
+                  ?>
+                  <p>Jerker is focused on customer journey management with long experience from business and process development including customer service optimization.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/stefan.jpg" alt="Tencollaborator">
                   <h3>Stefan Palmqvist</h3>
                   <h4>Service Designer</h4>
                   <p>Stefan is a natural storyteller with background in brand strategy, advertising and identity design.</p>

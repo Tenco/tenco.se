@@ -21,7 +21,7 @@
 
 
   // set the Jerker-message:
-  $limit = "2015-07-31 00:00:00.0";
+  # $limit = "2015-07-31 00:00:00.0";
 
 
 ?>
@@ -329,14 +329,25 @@
                   <h3>Jerker Knape</h3>
                   <h4>Service Designer</h4> 
                   <?php
-                  
+                    
+                    /*
                     if((time()) < strtotime($limit))
                     {
                       echo "(starting August)";  
                     }
-
+                    */
                   ?>
                   <p>Jerker is focused on customer journey management with long experience from business and process development including customer service optimization.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
+                  <h3>Anne-Louise Fyhring</h3>
+                  <h4>Service Designer</h4>
+                  <p>Anne-Louise is an Industrial Designer studying her Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

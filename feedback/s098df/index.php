@@ -99,12 +99,6 @@
         <div class="navbar cbp-af-inner" role="navigation">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
               <!--h1><a class="navbar-brand scroll" href="#intro">TENCO</a></h1-->
               <h1 style="background-color:#f6f6f6;"><a class="navbar-brand scroll" href="../../">
                 <img class="logo" src="../../img/tenco-logo.png">
@@ -129,7 +123,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <div class="alert alert-info" role="alert" style="font-size: 16px;" id="infobox"><strong>Vi skulle bli väldigt tacksamma</strong> om Du tog ett par minuter att besvara nedan frågor/påstående angående vårt senaste sammarbete. Tack för gott sammarbetet, med hopp om fler möjligheter i framtiden.<p>- Tenco</p></div>
+            <div class="alert alert-info" role="alert" style="font-size: 16px;" id="infobox"><strong>Vi skulle bli väldigt tacksamma</strong> om Du tog ett par minuter att besvara nedan frågor/påstående angående vårt senaste uppdrag. Tack för gott sammarbetet, med hopp om fler möjligheter i framtiden.<p>- Tenco</p></div>
             <div class="alert alert-success" role="alert" style="display:none; font-size: 16px;" id="success_msg"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <strong>Tack för din input</strong></div>
             <form id="feedbackForm" method="POST">
               <input type="hidden" name="feedbackID" value="<?=$id?>">

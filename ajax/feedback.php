@@ -5,8 +5,10 @@
 	// BOT TRAP!!
 	if (!empty($_POST['name']))
 	{
-		exit("success");
+		exit("successsss");
 	}
+
+	$thedata = var_export($_POST, true);
 
 	// -------------------------------------------
 	// --- ENTER YOUR EMAIL ADDRESS HERE
@@ -19,11 +21,13 @@
 
 
 	$email_subject = "Feedback form submitted on tenco.se";
-	$email_body = "New feedback from tenco.se. \n\n".var_dump($_POST);
+	$email_body = "New feedback from tenco.se.\n\n";
+	$email_body .= $thedata;
 	$headers = "From: office@tenco.se";
 	$headers .= "Reply-To: office@tenco.se";	
 	mail($to,$email_subject,$email_body,$headers);
 
+	print($email_body);
 	exit("success");
 
 ?>

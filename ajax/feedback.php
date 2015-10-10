@@ -27,7 +27,7 @@
 	$headers .= "Reply-To: office@tenco.se";	
 	mail($to,$email_subject,$email_body,$headers);
 
-	print($email_body);
+	#print($email_body);
 	exit("success");
 
 ?>

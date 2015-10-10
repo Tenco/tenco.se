@@ -324,7 +324,7 @@
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
-              <div class="item">
+              <!--div class="item">
                 <img class="display-pic" src="img/jerker.png" alt="Tencollaborator">
                   <h3>Jerker Knape</h3>
                   <h4>Service Designer</h4> 
@@ -338,11 +338,8 @@
                     */
                   ?>
                   <p>Jerker is focused on customer journey management with long experience from business and process development including customer service optimization.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
+                  
+              </div-->
               <div class="item">
                 <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
                   <h3>Anne-Louise Fyhring</h3>

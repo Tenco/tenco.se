@@ -20,7 +20,7 @@
  	$insta_array = unserialize($str);
 
 
-  // set the Jerker-message:
+  // set the time limit message:
   # $limit = "2015-07-31 00:00:00.0";
 
 
@@ -324,9 +324,9 @@
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
-              <!--div class="item">
-                <img class="display-pic" src="img/jerker.png" alt="Tencollaborator">
-                  <h3>Jerker Knape</h3>
+              <div class="item">
+                <img class="display-pic" src="img/jenny.png" alt="Tencollaborator">
+                  <h3>Jenny Bengtson</h3>
                   <h4>Service Designer</h4> 
                   <?php
                     
@@ -337,9 +337,9 @@
                     }
                     */
                   ?>
-                  <p>Jerker is focused on customer journey management with long experience from business and process development including customer service optimization.</p>
+                  <p>Jenny has a background in ethnology and arts. Her passion for understanding people and context shows clearly in both business- and social design projects.</p>
                   
-              </div-->
+              </div>
               <div class="item">
                 <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
                   <h3>Anne-Louise Fyhring</h3>

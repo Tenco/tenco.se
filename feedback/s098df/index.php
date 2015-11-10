@@ -160,6 +160,8 @@
                     <input type="radio" name="q1" value="3" autocomplete="off">  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="hidden-xs">Stämmer bra</span>
                   </label>
                 </div>
+                <!--a href=# class="showComment" data-commentField="one"><span style="padding-top:5px;" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                <div style="display:none;" id="divCommentone"><textarea name="comment1" class="form-control input-lg" rows="3" placeholder="Skriv..."></textarea></div-->
               </div>
 
               <div class="form-group">

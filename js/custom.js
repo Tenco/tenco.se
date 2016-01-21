@@ -295,12 +295,12 @@ function signupOverlay() {
   });
 }
 
-/* --- Modal overlay (used for login form) ------------------- */
+/* --- Modal overlay (used for portfolio) ------------------- */
 
-function loginOverlay() {
+function caseOverlay() {
   var container = document.querySelector( 'div.container' ),
-    triggerBttn = document.querySelector( '.login' ),
-    overlay = document.querySelector( 'div#login' ),
+    triggerBttn = document.querySelector( '.case' ),
+    overlay = document.querySelector( 'div#case' ),
     closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
@@ -337,10 +337,10 @@ function loginOverlay() {
     }
   }
 
-  triggerBttn.addEventListener( 'click', toggleOverlay );
+  //triggerBttn.addEventListener( 'click', toggleOverlay );
   closeBttn.addEventListener( 'click', toggleOverlay );
 
-  $('.login').click(function(e) {
+  $('.case').click(function(e) {
       e.preventDefault();
   });
 }
@@ -356,7 +356,7 @@ function onePageScroll() {
       scrollSpeed: 650,
       scrollOffset: 30,
       scrollThreshold: 0.5,
-      filter: ':not(.login, .signup)',
+      filter: ':not(.login, .signup, .portfolio)',
       easing: 'swing',
       begin: function() {
           //I get fired when the animation is starting

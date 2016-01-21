@@ -307,7 +307,7 @@
               <div class="item">
                 <img class="display-pic" src="img/adriana.png" alt="Co-founder">
                   <h3>Adriana Azinovic</h3>
-                  <h4>Design Manager</h4>
+                  <!--h4>Design Manager</h4-->
                   <p>Adriana is specialized in co-creation with stakeholders mixing business analysis, customer experience and service design tools.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -317,7 +317,7 @@
               <div class="item">
                 <img class="display-pic" src="img/magnus.png" alt="Co-founder">
                   <h3>Magnus Nilsson</h3>
-                  <h4>Service Designer</h4>
+                  <!--h4>Service Designer</h4-->
                   <p>Magnus is a conceptual designer using his strenghts as a full stack developer with a passion for research and requirement analysis.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -327,7 +327,7 @@
               <div class="item">
                 <img class="display-pic" src="img/jenny.png" alt="Tencollaborator">
                   <h3>Jenny Bengtson</h3>
-                  <h4>Service Designer</h4> 
+                  <!--h4>Service Designer</h4--> 
                   <?php
                     
                     /*
@@ -343,7 +343,7 @@
               <div class="item">
                 <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
                   <h3>Anne-Louise Fyhring</h3>
-                  <h4>Service Designer</h4>
+                  <!--h4>Service Designer</h4-->
                   <p>Anne-Louise is an Industrial Designer studying her Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -353,7 +353,7 @@
               <div class="item">
                 <img class="display-pic" src="img/stefan.jpg" alt="Tencollaborator">
                   <h3>Stefan Palmqvist</h3>
-                  <h4>Service Designer</h4>
+                  <!--h4>Service Designer</h4-->
                   <p>Stefan is a natural storyteller with background in brand strategy, advertising and identity design.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -363,19 +363,19 @@
               <div class="item">
                   <img class="display-pic" src="img/christine.png" alt="Tencollaborator">
                   <h3>Christine Kiliam Hinsell</h3>
-                  <h4>STRATEGIC FACILITATOR</h4>
+                  <!--h4>STRATEGIC FACILITATOR</h4-->
                   <p>Christine is a senior communication expert supporting management teams and individuals in change processes.</p>
               </div>
               <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
                   <h3>Thomas Glennow</h3>
-                  <h4>ENTERPRISE ARCHITECT</h4>
+                  <!--h4>ENTERPRISE ARCHITECT</h4-->
                   <p>Thomas uses his analytical skills and technical experience to increase the value you get out of your information technology investment.</p>
                 </div>
               <div class="item">
                 <img class="display-pic" src="img/user-avatar2.jpg" alt="Team Member">
                   <h3>Your Face Here</h3>
-                  <h4>TBD</h4>
+                  <!--h4>TBD</h4-->
                   <p>If you would like to be a part of this talented team please go ahead and <a class="signup" href="#">contact us</a>.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -414,7 +414,13 @@
         <div class="row">
           
           <div class="col-md-2 col-xs-4">
-            <img src="img/clients/tp.png" class="client-logo img-responsive">
+            <img src="img/clients/skanska.png" class="client-logo img-responsive">
+          </div>
+          <div class="col-md-2 col-xs-4">
+            <img src="img/clients/studio.png" class="client-logo img-responsive">
+          </div>
+          <div class="col-md-2 col-xs-4">
+            <!--a class="case" href=#--><img src="img/clients/tp.png" class="client-logo img-responsive"><!--/a-->
           </div>
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/jv.png" class="client-logo img-responsive">
@@ -556,6 +562,27 @@
       
     </div>
 
+
+<div id="case" class="caseoverlay overlay-content">
+  
+      <button type="button" class="overlay-close">Close</button>
+      <section class="login-part">
+        <p class="login-overlay">
+          Case
+        </p>
+        <p>
+          <img src="img/clients/tp.png" class="client-logo img-responsive">
+          Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.
+        </p>
+
+
+       </section>
+      
+    </div>
  
   
     <!-- Bootstrap core JavaScript
@@ -583,6 +610,7 @@
         $(".player").mb_YTPlayer();
         isotope();
         signupOverlay();
+        caseOverlay();
       });
    
 

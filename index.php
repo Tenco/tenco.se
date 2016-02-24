@@ -515,6 +515,7 @@
                 <li><a href="http://sweden.service-design-network.org/" target="_new">Service Design Network</a></li>
                 <li><a target="_new" href="http://mediaevolution.se">Media Evoulution</a></li>
                 <li><a target="_new" href="http://www.elicit.se">Elicit</a></li>
+                <li><a target="_new" href="http://humanintel.se">Humanintel</a></li>
               </ul>
             </div>  
           </div>

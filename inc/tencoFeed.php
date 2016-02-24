@@ -117,8 +117,9 @@ class tencoFeed {
 		$response = $this->fetchSomePhotos();
 	    $instagrams = $response->json();
 
+	    
 	    $n = 0;
-	    foreach ($instagrams[data] as $k => $pic)
+	    foreach ($instagrams['data'] as $k => $pic)
 	    {
 	      $temp_array[$n]['thumbnail'] = $pic['images']['thumbnail']['url'];
 	      $temp_array[$n]['img'] = $pic['images']['standard_resolution']['url'];

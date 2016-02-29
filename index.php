@@ -351,6 +351,16 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
+                <img class="display-pic" src="img/janina.png" alt="Tencollaborator">
+                  <h3>Janina Sjöström</h3>
+                  <!--h4>Service Designer</h4-->
+                  <p>Janina is a Journalist, Communications Officer and an experienced Graphic Designer. Her focus lies in holistic solutions based on the needs expressed by people.</p>
+                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
+              </div>
+              <div class="item">
                 <img class="display-pic" src="img/stefan.jpg" alt="Tencollaborator">
                   <h3>Stefan Palmqvist</h3>
                   <!--h4>Service Designer</h4-->

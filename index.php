@@ -54,6 +54,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -524,7 +525,7 @@
               <ul class="list-unstyled">
                 <li><a href="http://sweden.service-design-network.org/" target="_new">Service Design Network</a></li>
                 <li><a target="_new" href="http://mediaevolution.se">Media Evoulution</a></li>
-                <li><a target="_new" href="http://www.elicit.se">Elicit</a></li>
+                <li><a target="_new" href="http://www.itinforma.se/">IT informa</a></li>
                 <li><a target="_new" href="http://humanintel.se">Humanintel</a></li>
               </ul>
             </div>  

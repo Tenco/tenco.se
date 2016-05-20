@@ -425,6 +425,9 @@
         <div class="row">
           
           <div class="col-md-2 col-xs-4">
+            <img src="img/clients/almi.png" class="client-logo img-responsive">
+          </div>
+          <div class="col-md-2 col-xs-4">
             <img src="img/clients/skanska.png" class="client-logo img-responsive">
           </div>
           <div class="col-md-2 col-xs-4">

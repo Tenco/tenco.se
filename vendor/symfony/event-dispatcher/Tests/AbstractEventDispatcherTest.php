@@ -15,7 +15,7 @@ use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-class EventDispatcherTest extends \PHPUnit_Framework_TestCase
+abstract class AbstractEventDispatcherTest extends \PHPUnit_Framework_TestCase
 {
     /* Some pseudo events */
     const preFoo = 'pre.foo';
@@ -32,7 +32,7 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->dispatcher = new EventDispatcher();
+        $this->dispatcher = $this->createEventDispatcher();
         $this->listener = new TestEventListener();
     }
 
@@ -41,6 +41,8 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
         $this->dispatcher = null;
         $this->listener = null;
     }
+
+    abstract protected function createEventDispatcher();
 
     public function testInitialState()
     {
@@ -99,11 +101,25 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
         $this->dispatcher->addListener('post.foo', $listener6, 10);
 
         $expected = array(
-            'pre.foo'  => array($listener3, $listener2, $listener1),
+            'pre.foo' => array($listener3, $listener2, $listener1),
             'post.foo' => array($listener6, $listener5, $listener4),
         );
 
         $this->assertSame($expected, $this->dispatcher->getListeners());
+    }
+
+    public function testGetListenerPriority()
+    {
+        $listener1 = new TestEventListener();
+        $listener2 = new TestEventListener();
+
+        $this->dispatcher->addListener('pre.foo', $listener1, -10);
+        $this->dispatcher->addListener('pre.foo', $listener2);
+
+        $this->assertSame(-10, $this->dispatcher->getListenerPriority('pre.foo', $listener1));
+        $this->assertSame(0, $this->dispatcher->getListenerPriority('pre.foo', $listener2));
+        $this->assertNull($this->dispatcher->getListenerPriority('pre.bar', $listener2));
+        $this->assertNull($this->dispatcher->getListenerPriority('pre.foo', function () {}));
     }
 
     public function testDispatch()
@@ -117,15 +133,24 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Symfony\Component\EventDispatcher\Event', $this->dispatcher->dispatch(self::preFoo));
         $event = new Event();
         $return = $this->dispatcher->dispatch(self::preFoo, $event);
-        $this->assertEquals('pre.foo', $event->getName());
         $this->assertSame($event, $return);
+    }
+
+    /**
+     * @group legacy
+     */
+    public function testLegacyDispatch()
+    {
+        $event = new Event();
+        $return = $this->dispatcher->dispatch(self::preFoo, $event);
+        $this->assertEquals('pre.foo', $event->getName());
     }
 
     public function testDispatchForClosure()
     {
         $invoked = 0;
         $listener = function () use (&$invoked) {
-            $invoked++;
+            ++$invoked;
         };
         $this->dispatcher->addListener('pre.foo', $listener);
         $this->dispatcher->addListener('post.foo', $listener);
@@ -238,7 +263,10 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($this->dispatcher->hasListeners(self::preFoo));
     }
 
-    public function testEventReceivesTheDispatcherInstance()
+    /**
+     * @group legacy
+     */
+    public function testLegacyEventReceivesTheDispatcherInstance()
     {
         $dispatcher = null;
         $this->dispatcher->addListener('test', function ($event) use (&$dispatcher) {
@@ -269,7 +297,7 @@ class EventDispatcherTest extends \PHPUnit_Framework_TestCase
      */
     public function testWorkaroundForPhpBug62976()
     {
-        $dispatcher = new EventDispatcher();
+        $dispatcher = $this->createEventDispatcher();
         $dispatcher->addListener('bug.62976', new CallableClass());
         $dispatcher->removeListener('bug.62976', function () {});
         $this->assertTrue($dispatcher->hasListeners('bug.62976'));

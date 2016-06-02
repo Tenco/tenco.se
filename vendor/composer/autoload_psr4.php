@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'tenco\\' => array($baseDir . '/inc'),
+    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
 );

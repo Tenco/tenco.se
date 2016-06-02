@@ -5,7 +5,7 @@
 
   */
 
-	require 'vendor/autoload.php';
+	#require 'vendor/autoload.php';
  
 
   /**
@@ -15,9 +15,12 @@
   */
 
   	// class found in inc/tencoFeed.php
-	$feed = new tenco\tencoFeed();
- 	$str = $feed->getTenLatestInstagramPhotos();
- 	$insta_array = unserialize($str);
+	#$feed = new tenco\tencoFeed();
+ 	#$str = $feed->getTenLatestInstagramPhotos();
+ 	#$insta_array = unserialize($str);
+  $feed = 0;
+  $str = 0;
+  $insta_array = 0;
 
 
   // set the time limit message:
@@ -98,7 +101,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
                 <!--li><a href="#intro">Home</a></li-->
-                <li><a href="#feed">News</a></li>
+                <!--li><a href="#feed">News</a></li-->
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#clients">Clients</a></li>
@@ -135,7 +138,7 @@
     </div>
 
     <?php
-    if ($insta_array)
+    if ($insta_array || 1==2)
     {
     ?>
     <!-- Portfolio

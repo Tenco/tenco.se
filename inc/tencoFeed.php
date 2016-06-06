@@ -70,18 +70,7 @@ class tencoFeed {
 		    ]
 		]);
 
-		
 		return json_decode($response->getBody(), TRUE);
-
-
-		/* OLD
-		// fetch some photos
-		$client = new Guzzle\Client('https://api.instagram.com/v1/users/'.$this->tencodesign.'/media/');
-
-		$response = $client->get('recent/?client_id='.$this->client_id.'&count='.$this->count)->send();
-
-		return $response;
-		*/
 
   	}
 
@@ -133,16 +122,8 @@ class tencoFeed {
   	public function CacheTenLatestInstagramImages()
   	{
 	   
-		#$response = $this->fetchSomePhotos();
-
-		#echo "<pre>";
-		#print_r($response);
-		#exit;
 		
-	    #$instagrams = $response->json();
-
-	    // I return json already from fetchSomePhotos()
-
+	    // Instagrams returned in json from fetchSomePhotos()
 	    $instagrams = $this->fetchSomePhotos();
 
 	    

@@ -98,7 +98,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
                 <!--li><a href="#intro">Home</a></li-->
-                <!--li><a href="#feed">News</a></li-->
+                <li><a href="#feed">News</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#clients">Clients</a></li>

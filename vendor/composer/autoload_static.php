@@ -6,14 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720
 {
+    public static $files = array (
+        'fad373d645dd668e85d44ccf3c38fbd6' => __DIR__ . '/..' . '/guzzlehttp/streams/src/functions.php',
+        '154e0d165f5fe76e8e9695179d0a7345' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         't' => 
         array (
             'tenco\\' => 6,
         ),
-        'S' => 
+        'G' => 
         array (
-            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\' => 11,
         ),
     );
 
@@ -22,23 +28,13 @@ class ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720
         array (
             0 => __DIR__ . '/../..' . '/inc',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'GuzzleHttp\\Stream\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
         ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'G' => 
+        'GuzzleHttp\\' => 
         array (
-            'Guzzle\\Tests' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
-            ),
-            'Guzzle' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
-            ),
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
     );
 
@@ -47,7 +43,6 @@ class ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc1791b9f74c92e71b568b36bf8ecb720::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

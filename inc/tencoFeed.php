@@ -1,6 +1,7 @@
 <?php namespace tenco;
 
-use \Guzzle\Service as Guzzle;
+use GuzzleHttp;
+
 
 
 	/**
@@ -16,8 +17,9 @@ class tencoFeed {
 	* 	set variables
 	*
 	*/	
-	private $tencodesign = 21450120;
-  	private $client_id = 'bb732030ffd9411c9f14da0647156e0f';
+	#private $tencodesign = 21450120;
+	private $access_token = '21450120.64dbd65.d69236aa1c284c939ffe59ae38c29f56';
+  	#private $client_id = 'bb732030ffd9411c9f14da0647156e0f';
   	private $count = 9;
   	private $filename = 'instagrams.txt';
   	private $cache_filename = 'cache.txt';
@@ -57,12 +59,29 @@ class tencoFeed {
 	*/
 	public function fetchSomePhotos()
 	{
+		
+		$client = new \GuzzleHttp\Client;
+		
+
+		$response = $client->get('https://api.instagram.com/v1/users/self/media/recent/', [
+		    'query' => [
+		        'access_token' => $this->access_token, 
+		        'count' => $this->count
+		    ]
+		]);
+
+		
+		return json_decode($response->getBody(), TRUE);
+
+
+		/* OLD
 		// fetch some photos
 		$client = new Guzzle\Client('https://api.instagram.com/v1/users/'.$this->tencodesign.'/media/');
 
 		$response = $client->get('recent/?client_id='.$this->client_id.'&count='.$this->count)->send();
 
 		return $response;
+		*/
 
   	}
 
@@ -114,8 +133,17 @@ class tencoFeed {
   	public function CacheTenLatestInstagramImages()
   	{
 	   
-		$response = $this->fetchSomePhotos();
-	    $instagrams = $response->json();
+		#$response = $this->fetchSomePhotos();
+
+		#echo "<pre>";
+		#print_r($response);
+		#exit;
+		
+	    #$instagrams = $response->json();
+
+	    // I return json already from fetchSomePhotos()
+
+	    $instagrams = $this->fetchSomePhotos();
 
 	    
 	    $n = 0;

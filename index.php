@@ -5,7 +5,7 @@
 
   */
 
-	#require 'vendor/autoload.php';
+	require 'vendor/autoload.php';
  
 
   /**
@@ -15,13 +15,10 @@
   */
 
   	// class found in inc/tencoFeed.php
-	#$feed = new tenco\tencoFeed();
- 	#$str = $feed->getTenLatestInstagramPhotos();
- 	#$insta_array = unserialize($str);
-  $feed = 0;
-  $str = 0;
-  $insta_array = 0;
-
+	$feed = new tenco\tencoFeed();
+ 	$str = $feed->getTenLatestInstagramPhotos();
+ 	$insta_array = unserialize($str);
+  
 
   // set the time limit message:
   # $limit = "2015-07-31 00:00:00.0";
@@ -138,7 +135,7 @@
     </div>
 
     <?php
-    if ($insta_array || 1==2)
+    if ($insta_array)
     {
     ?>
     <!-- Portfolio

@@ -1,5 +1,5 @@
 <?php
-
+/*
 // BOT TRAP!!
 if (!empty($_POST['name']))
 {

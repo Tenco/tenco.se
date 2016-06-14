@@ -553,7 +553,12 @@
         <p class="login-overlay">
           Get in touch
         </p>
-        <form method="post" id="contactForm">
+        <p>
+          <a href="mailto:office@tenco.se">office@tenco.se</a><br />
+          <a href="tel:+46767621011">+46 (0)767 62 10 11</a>
+        </p>
+
+        <!--form method="post" id="contactForm">
           <input class="form-control" type="email" name="email" placeholder="Email" required="required" />
           <div style="display:none;"><input type="text" name="name" /></div>
           <textarea required="required" placeholder="Message" name="message" /></textarea>
@@ -562,13 +567,12 @@
           </div>
         </div>
           <button id="contactButton" type="submit" class="btn btn-primary btn-block btn-large">Send</button>
-          <!--p class="disclaimer">By signing up, you agree with our <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p-->
-        </form>
+        </form-->
         
-        <div id="success_msg" style="display:none;">
+        <!--div id="success_msg" style="display:none;">
           <div class="alert alert-success" role="alert">Thanks, we'll get back to you shortly :)
           </div>
-        </div>
+        </div-->
 
 
        </section>

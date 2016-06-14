@@ -590,12 +590,15 @@ blockquote {
   opacity: 0.5;
   font-size: 0.95em;
 }
+
+
 .login-part p {
   color: white;
   text-align: center;
-  font-size: 0.95em;
+  /*font-size: 0.95em;*/
   margin-top: 2.5em;
 }
+
 .login-part p.disclaimer {
   opacity: 0.5;
   padding: 0 1.5em;

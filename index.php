@@ -345,7 +345,7 @@
                 <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
                   <h3>Anne-Louise Fyhring</h3>
                   <!--h4>Service Designer</h4-->
-                  <p>Anne-Louise is an Industrial Designer studying her Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
+                  <p>Anne-Louise is an Industrial Designer with a Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>

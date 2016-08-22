@@ -341,16 +341,11 @@
                   <p>Jenny has a background in ethnology and arts. Her passion for understanding people and context shows clearly in both business- and social design projects.</p>
                   
               </div>
-              <div class="item">
+              <!--div class="item">
                 <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
                   <h3>Anne-Louise Fyhring</h3>
-                  <!--h4>Service Designer</h4-->
                   <p>Anne-Louise is an Industrial Designer with a Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
+              </div-->
               <div class="item">
                 <img class="display-pic" src="img/janina.png" alt="Tencollaborator">
                   <h3>Janina Sjöström</h3>

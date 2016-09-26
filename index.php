@@ -365,6 +365,16 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
+                <img class="display-pic" src="img/emma.png" alt="Tencollaborator">
+                  <h3>Emma Rugg</h3>
+                  <p>Emma has a communication and marketing background working in startups. She is a creative facilitator and loves expressing complexity in a simple but sophisticated way.</p>
+              </div>
+              <div class="item">
+                <img class="display-pic" src="img/monika.png" alt="Tencollaborator">
+                  <h3>Monika Zielińska</h3>
+                  <p>Monika is a service designer with a background in linguistic and multimedia. She is an observer motivated to define problems and make solutions for a big impact.</p>
+              </div>
+              <div class="item">
                 <img class="display-pic" src="img/stefan.jpg" alt="Tencollaborator">
                   <h3>Stefan Palmqvist</h3>
                   <!--h4>Service Designer</h4-->

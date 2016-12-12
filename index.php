@@ -334,27 +334,6 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
-                <img class="display-pic" src="img/jenny.png" alt="Tencollaborator">
-                  <h3>Jenny Bengtson</h3>
-                  <!--h4>Service Designer</h4--> 
-                  <?php
-                    
-                    /*
-                    if((time()) < strtotime($limit))
-                    {
-                      echo "(starting August)";  
-                    }
-                    */
-                  ?>
-                  <p>Jenny has a background in ethnology and arts. Her passion for understanding people and context shows clearly in both business- and social design projects.</p>
-                  
-              </div>
-              <!--div class="item">
-                <img class="display-pic" src="img/annelouise.jpg" alt="Tencollaborator">
-                  <h3>Anne-Louise Fyhring</h3>
-                  <p>Anne-Louise is an Industrial Designer with a Master in Service Design. She emphasize the importance of visualisation in design and communication.</p>
-              </div-->
-              <div class="item">
                 <img class="display-pic" src="img/janina.png" alt="Tencollaborator">
                   <h3>Janina Sjöström</h3>
                   <!--h4>Service Designer</h4-->

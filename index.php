@@ -486,9 +486,9 @@
               <div class="footer-logo">
                 <h2>Tenco</h2>
                 
-                <p><a href="https://goo.gl/maps/2uPhN" target="_new">Södra Bulltoftavägen 51<br />212 43 Malmö, Sweden</a>
-                  <br /> Entrance: <a target=_new href="http://map.what3words.com/hopes.storage.hails">hopes.storage.hails</a>
-                  <br />Parking: <a target=_new href="http://map.what3words.com/walnuts.heavy.describe">walnuts.heavy.describe</a>
+                <p><a href="https://goo.gl/maps/D8ApwQFyGkT2" target="_new">Humlegatan 4<br />211 27 Malmö, Sweden</a>
+                  <!--br /> Entrance: <a target=_new href="http://map.what3words.com/hopes.storage.hails">hopes.storage.hails</a>
+                  <br />Parking: <a target=_new href="http://map.what3words.com/walnuts.heavy.describe">walnuts.heavy.describe</a-->
                 </p>
                 <p>
                 <a href="tel:+46767621011">+46 (0)767 62 10 11</a><br />

@@ -39,4 +39,4 @@ $headers = "From: $email\n";
 $headers .= "Reply-To: $email";	
 mail($to,$email_subject,$email_body,$headers);
 
-exit("fail");
+exit("success");

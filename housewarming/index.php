@@ -19,15 +19,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-    <link href="css/tenco.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/theme.css" rel="stylesheet">
+    <link href="../css/tenco.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -44,10 +44,10 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.../js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="js/modernizr.custom.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
   </head>
 
   <body>
@@ -77,7 +77,7 @@
               </button>
               <!--h1><a class="navbar-brand scroll" href="#intro">TENCO</a></h1-->
               <h1><a class="navbar-brand scroll" href="/">
-                <img class="logo" src="img/tenco-logo.png">
+                <img class="logo" src="../img/tenco-logo.png">
               </a></h1>
             </div>
           
@@ -185,21 +185,21 @@ Come by to grab a drink, participate in the discussion, or to simply say hello t
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/classie.js"></script>
-        <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/scrollReveal.js"></script>
-    <script src="js/jquery.scrollTo.js" defer="defer"></script>
-    <script src="js/jquery.nav.js" defer="defer"></script>
-    <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
-    <script src="js/isotope.min.js" defer="defer"></script>
-    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
-    <script src="js/jqBootstrapValidation.js" defer="defer"></script>
-    <script src="js/tenco.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/classie.js"></script>
+        <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/jquery.mb.YTPlayer.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/scrollReveal.js"></script>
+    <script src="../js/jquery.scrollTo.js" defer="defer"></script>
+    <script src="../js/jquery.nav.js" defer="defer"></script>
+    <script src="../js/imagesloaded.pkgd.min.js" defer="defer"></script>
+    <script src="../js/isotope.min.js" defer="defer"></script>
+    <script src="../js/jquery.magnific-popup.min.js" defer="defer"></script>
+    <script src="../js/jqBootstrapValidation.js" defer="defer"></script>
+    <script src="../js/tenco.js"></script>
+    <script src="../js/custom.js"></script>
 
     <script>
 

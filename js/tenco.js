@@ -63,9 +63,9 @@
 				{
 					$('#error_msg').slideDown();
 					setTimeout(function() {
-						// Do something after 3 seconds
+						// Do something after 4 seconds
 						$('#error_msg').slideUp();
-					}, 3000);
+					}, 4000);
 				}
 				else
 				{

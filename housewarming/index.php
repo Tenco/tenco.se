@@ -113,7 +113,7 @@
           <div class="col-sm-6 text-center margin-top clearfix">
             <!--div class="vertical-align" -->
 
-            <p>To celebrate our brand new studio space, we’re bringing together an inter-disciplinary group of thinkers and doers for an afterwork salon about creative collaboration in the workplace.
+            <p><strong>To celebrate our brand new studio space</strong>, we’re bringing together an inter-disciplinary group of thinkers and doers for an afterwork salon about creative collaboration in the workplace.
 In an increasingly digital world where employees can work anywhere at anytime, speakers will discuss the value of physical collaboration, and how can we use space to promote creativity and productivity in any industry.
 Come by to grab a drink, participate in the discussion, or to simply say hello to our new home!</p>
               <p>
@@ -130,7 +130,7 @@ Come by to grab a drink, participate in the discussion, or to simply say hello t
                     <div class="col-sm-12">
                         <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Enter company name" style="margin-bottom:20px;" name="theCompany" required>
                         <span class="pull-right"><button type="submit" class="btn btn-primary btn-lg" id="frmSubmit">
-                            Submit</button></span><div id="error_msg" class="clearfix vertical-align" style="display:none;">Oooops, something went wrong. Please try again.</div>
+                            Submit</button></span><div id="error_msg" class="clearfix vertical-align" style="display:none;">:( Oooops, something went wrong. Please try again.</div>
                         </div>
                 </form>
                 <div id="success_msg" class="clearfix vertical-align" style="display:none;">You are very welcome.&nbsp;&nbsp;&nbsp;

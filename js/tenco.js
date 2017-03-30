@@ -6,7 +6,7 @@
 
 		var form = $(this);
 		var method = "POST";
-		var url = "ajax/contact.php";
+		var url = "../ajax/contact.php";
 
 		$.ajax({
 			type: 		method,

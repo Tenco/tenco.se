@@ -39,3 +39,48 @@
 	});
 
 })();
+
+
+(function()
+{
+
+	$('form#submitForm').on('submit',function(e)
+	{
+
+		//alert("submit");
+
+		var form = $(this);
+		var method = "POST";
+		var url = "ajax/notify.php";
+
+		$.ajax({
+			type: 		method,
+			url: 		url,
+			data: 		form.serialize(),
+			success: 	function(respons)
+			{
+				if (respons == "fail")
+				{
+					$('#error_msg').slideDown();
+					setTimeout(function() {
+						// Do something after 3 seconds
+						$('#error_msg').slideUp();
+					}, 3000);
+				}
+				else
+				{
+					$('#submitForm').slideUp();
+					$('#error_msg').slideUp();
+					$('#success_msg').slideDown();
+				}
+					
+			}
+
+		});
+
+		
+		e.preventDefault();
+	
+	});
+
+})();

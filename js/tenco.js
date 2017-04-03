@@ -51,7 +51,7 @@
 
 		var form = $(this);
 		var method = "POST";
-		var url = "../ajax/notify.php";
+		var url = "/ajax/notify.php";
 
 		$.ajax({
 			type: 		method,

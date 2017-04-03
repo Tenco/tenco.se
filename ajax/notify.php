@@ -26,7 +26,7 @@ if(empty($name)	|| empty($company) || !filter_var($email,FILTER_VALIDATE_EMAIL))
 // --- ENTER YOUR EMAIL ADDRESS HERE
 // -------------------------------------------
 
-$to = 'magnus@tenco.se';
+$to = 'office@tenco.se';
 
 // -------------------------------------------
 

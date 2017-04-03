@@ -104,13 +104,19 @@
           </div>
         </div-->
         
-
+      <div class="row margin-top">
+          <div class="col-sm-12 text-center clearfix">
+            <h2>Creative Collaboration with Tenco</h2>
+            <h4 style="color: #827f7f; font-size: 28px;!important">27<small>th</small> of April 5 pm, <a href="https://goo.gl/maps/MggyRYTAPhJ2" target=_new>Humlegatan 4 Malmö</a></h4>
+          </div>
+        </div>
         <div class="row margin-top">
           <div class="col-sm-6 text-center clearfix">
-            <h2>Sign up yada yada</h2>
+            <!--h2>Sign up yada yada</h2-->
             <img class="img-responsive img-center" src="/housewarming/img/boring-cubicles.jpg" width="100%" >
+            <br /><!--small>Humlegatan 4, Malmö</small-->
           </div>
-          <div class="col-sm-6 text-center margin-top clearfix">
+          <div class="col-sm-6 text-center clearfix">
             <!--div class="vertical-align" -->
 
             <p><strong>To celebrate our brand new studio space</strong>, we’re bringing together an inter-disciplinary group of thinkers and doers for an afterwork salon about creative collaboration in the workplace.
@@ -121,24 +127,24 @@ Come by to grab a drink, participate in the discussion, or to simply say hello t
                 <form class="form-horizontal" name="housewarming" id="submitForm">
                 
                     <div class="col-sm-12">
-                      <input class="form-control input-lg" type="text" id="name" placeholder="Enter your name" name="name" style="display:none;">
-                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Enter your name" style="margin-bottom:20px;" name="theName" required>
+                      <input class="form-control input-lg" type="text" id="name" placeholder="Your name" name="name" style="display:none;">
+                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Your name" style="margin-bottom:20px;" name="theName" required>
                     </div>
                     <div class="col-sm-12">
-                        <input class="form-control input-lg" type="email" id="formGroupInputLarge" placeholder="Enter your email" style="margin-bottom:20px;" name="theEmail" required>
+                        <input class="form-control input-lg" type="email" id="formGroupInputLarge" placeholder="Your email" style="margin-bottom:20px;" name="theEmail" required>
                     </div>
                     <div class="col-sm-12">
-                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Enter company name" style="margin-bottom:20px;" name="theCompany" required>
+                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Your company name" style="margin-bottom:20px;" name="theCompany" required>
                         <span class="pull-right"><button type="submit" class="btn btn-primary btn-lg" id="frmSubmit">
                             Submit</button></span><div id="error_msg" class="clearfix vertical-align" style="display:none;">:( Oooops, something went wrong. Please try again.</div>
                         </div>
                 </form>
-                <div id="success_msg" class="clearfix vertical-align" style="display:none;">You are very welcome.&nbsp;&nbsp;&nbsp;
+                <div id="success_msg" class="clearfix vertical-align" style="display:none;">Thank you. See you on the 27th!&nbsp;&nbsp;&nbsp;
 
                   <span class="addtocalendar atc-style-blue">
                     <var class="atc_event">
-                        <var class="atc_date_start">2017-04-27 16:00:00</var>
-                        <var class="atc_date_end">2017-04-27 18:00:00</var>
+                        <var class="atc_date_start">2017-04-27 17:00:00</var>
+                        <var class="atc_date_end">2017-04-27 19:00:00</var>
                         <var class="atc_timezone">Europe/Stockholm</var>
                         <var class="atc_title">Tenco Housewarming</var>
                         <!--var class="atc_description">May the force be with you</var-->
@@ -155,12 +161,6 @@ Come by to grab a drink, participate in the discussion, or to simply say hello t
       </div>
 
     </section>
-
-
-
-    
-
-   
 
    <!-- Footer
     ================================================== -->

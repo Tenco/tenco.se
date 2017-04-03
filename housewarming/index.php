@@ -107,7 +107,7 @@
       <div class="row margin-top">
           <div class="col-sm-12 text-center clearfix">
             <h2>Creative Collaboration with Tenco</h2>
-            <h4 style="color: #827f7f; font-size: 28px;!important">27<small>th</small> of April 5 pm, <a href="https://goo.gl/maps/MggyRYTAPhJ2" target=_new>Humlegatan 4 Malmö</a></h4>
+            <h4 style="color: #827f7f;">27<small>th</small> of April 5 pm, <a href="https://goo.gl/maps/MggyRYTAPhJ2" target=_new>Humlegatan 4 Malmö</a></h4>
           </div>
         </div>
         <div class="row margin-top">

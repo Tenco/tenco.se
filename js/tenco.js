@@ -84,3 +84,25 @@
 	});
 
 })();
+
+(function()
+{
+
+	$('#plusOne').on('click',function(e)
+	{
+
+		// alert("submit");
+		
+
+		$('#plusoneForm').slideDown();
+			setTimeout(function() {
+			// Do something after 4 seconds
+			$('#plusOne').slideUp();
+		}, 1000);
+
+		
+		e.preventDefault();
+	
+	});
+
+})();

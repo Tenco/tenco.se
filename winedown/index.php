@@ -106,47 +106,60 @@
         
       <div class="row margin-top">
           <div class="col-sm-12 text-center clearfix">
-            <h2>Creative Collaboration with Tenco</h2>
-            <h4 style="color: #827f7f;">27<small>th</small> of April 5 pm, <a href="https://goo.gl/maps/MggyRYTAPhJ2" target=_new>Humlegatan 4 Malmö</a></h4>
+            <h2>SUmmer Wine Down With tenco</h2>
+            <h4 style="color: #827f7f;">29<small>th</small> of June 5 pm, <a href="https://goo.gl/maps/MggyRYTAPhJ2" target=_new>Humlegatan 4 Malmö</a></h4>
           </div>
         </div>
         <div class="row margin-top">
           <div class="col-sm-6 text-center clearfix">
             <!--h2>Sign up yada yada</h2-->
-            <img class="img-responsive img-center" src="/housewarming/img/boring-cubicles.jpg" width="100%" >
+            <img class="img-responsive img-center" src="/winedown/img/summer.png" width="100%" >
             <br /><!--small>Humlegatan 4, Malmö</small-->
+            <p><strong>Fusce Bibendum Ultricies</strong>, Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
+              <p>
           </div>
           <div class="col-sm-6 text-center clearfix">
             <!--div class="vertical-align" -->
 
-            <p><strong>To celebrate our brand new studio space</strong>, we’re bringing together an inter-disciplinary group of thinkers and doers for an afterwork salon about creative collaboration in the workplace.
-In an increasingly digital world where employees can work anywhere at anytime, speakers will discuss the value of physical collaboration, and how can we use space to promote creativity and productivity in any industry.
-Come by to grab a drink, participate in the discussion, or to simply say hello to our new home!</p>
-              <p>
 
                 <form class="form-horizontal" name="housewarming" id="submitForm">
                 
                     <div class="col-sm-12">
                       <input class="form-control input-lg" type="text" id="name" placeholder="Your name" name="name" style="display:none;">
-                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Your name" style="margin-bottom:20px;" name="theName" required>
+                        <input class="form-control input-lg" type="text"  placeholder="Your name" style="margin-bottom:20px;" name="theName" required>
                     </div>
                     <div class="col-sm-12">
-                        <input class="form-control input-lg" type="email" id="formGroupInputLarge" placeholder="Your email" style="margin-bottom:20px;" name="theEmail" required>
+                        <input class="form-control input-lg" type="email" placeholder="Your email" style="margin-bottom:20px;" name="theEmail" required>
                     </div>
                     <div class="col-sm-12">
-                        <input class="form-control input-lg" type="text" id="formGroupInputLarge" placeholder="Your company name" style="margin-bottom:20px;" name="theCompany" required>
-                        <span class="pull-right"><button type="submit" class="btn btn-primary btn-lg" id="frmSubmit">
-                            Submit</button></span><div id="error_msg" class="clearfix vertical-align" style="display:none;">:( Oooops, something went wrong. Please try again.</div>
+                        <input class="form-control input-lg" type="text" placeholder="Your company name" style="margin-bottom:20px;" name="theCompany" required>
+                     </div>
+                     <div id="plusoneForm" style="display:none;">
+                        <div class="col-sm-12">
+                          <input class="form-control input-lg" type="text" placeholder="Your Plus one name" style="margin-bottom:20px;" name="thePlusName" >
+                      </div>
+                      <div class="col-sm-12">
+                          <input class="form-control input-lg" type="email"  placeholder="Your Plus one email" style="margin-bottom:20px;" name="thePlusEmail" >
+                      </div>
+                      <div class="col-sm-12">
+                          <input class="form-control input-lg" type="text"  placeholder="Your Plus one company name" style="margin-bottom:20px;" name="thePlusCompany" >
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <span class="pull-right">
+                          <button type="button" id="plusOne" class="btn btn btn-lg">Bring a plus one?</button>
+                          <button type="submit" class="btn btn-primary btn-lg" id="frmSubmit">Submit</button></span>
+                            <div id="error_msg" class="clearfix vertical-align" style="display:none;">Apologies, something went wrong. Please try again.</div>
                         </div>
                 </form>
-                <div id="success_msg" class="clearfix vertical-align" style="display:none;">Thank you. See you on the 27th!&nbsp;&nbsp;&nbsp;
+                <div id="success_msg" class="clearfix vertical-align" style="display:none;">Thank you. See you on the 29th!&nbsp;&nbsp;&nbsp;
 
                   <span class="addtocalendar atc-style-blue">
                     <var class="atc_event">
-                        <var class="atc_date_start">2017-04-27 17:00:00</var>
-                        <var class="atc_date_end">2017-04-27 19:00:00</var>
+                        <var class="atc_date_start">2017-06-29 17:00:00</var>
+                        <var class="atc_date_end">2017-06-29 21:00:00</var>
                         <var class="atc_timezone">Europe/Stockholm</var>
-                        <var class="atc_title">Tenco Housewarming</var>
+                        <var class="atc_title">Tenco Wine Down</var>
                         <!--var class="atc_description">May the force be with you</var-->
                         <var class="atc_location">Humlegatan 4, Malmö</var>
                         <var class="atc_organizer">Tenco AB</var>

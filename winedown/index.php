@@ -115,12 +115,11 @@
             <!--h2>Sign up yada yada</h2-->
             <img class="img-responsive img-center" src="/winedown/img/summer.png" width="100%" >
             <br /><!--small>Humlegatan 4, Malmö</small-->
-            <p><strong>Fusce Bibendum Ultricies</strong>, Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
               <p>
           </div>
           <div class="col-sm-6 text-center clearfix">
             <!--div class="vertical-align" -->
-
+<p><strong>Fusce Bibendum Ultricies</strong>, Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
 
                 <form class="form-horizontal" name="housewarming" id="submitForm">
                 
@@ -131,9 +130,9 @@
                     <div class="col-sm-12">
                         <input class="form-control input-lg" type="email" placeholder="Your email" style="margin-bottom:20px;" name="theEmail" required>
                     </div>
-                    <div class="col-sm-12">
+                    <!--div class="col-sm-12">
                         <input class="form-control input-lg" type="text" placeholder="Your company name" style="margin-bottom:20px;" name="theCompany" required>
-                     </div>
+                     </div-->
                      <div id="plusoneForm" style="display:none;">
                         <div class="col-sm-12">
                           <input class="form-control input-lg" type="text" placeholder="Your Plus one name" style="margin-bottom:20px;" name="thePlusName" >
@@ -141,9 +140,9 @@
                       <div class="col-sm-12">
                           <input class="form-control input-lg" type="email"  placeholder="Your Plus one email" style="margin-bottom:20px;" name="thePlusEmail" >
                       </div>
-                      <div class="col-sm-12">
+                      <!--div class="col-sm-12">
                           <input class="form-control input-lg" type="text"  placeholder="Your Plus one company name" style="margin-bottom:20px;" name="thePlusCompany" >
-                        </div>
+                        </div-->
                       </div>
                       <div class="col-sm-12">
                         <span class="pull-right">

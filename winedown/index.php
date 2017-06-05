@@ -119,7 +119,7 @@
           </div>
           <div class="col-sm-6 text-center clearfix">
             <!--div class="vertical-align" -->
-<p><strong>Fusce Bibendum Ultricies</strong>, Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis.</p>
+<p><strong>With the first half of the year behind us and summer up ahead</strong>, we’d love you to join us for a casual afterwork bbq and creative discussion on June 29. Building on the success of our housewarming event in April, we’ll again be bringing together an interdisciplinary group of speakers sharing personal experiences around the topic of creative collaboration. Come by to participate in the discussion, meet new contacts, or simply wine down into summer with us.</p>
 
                 <form class="form-horizontal" name="housewarming" id="submitForm">
                 

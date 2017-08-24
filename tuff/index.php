@@ -70,7 +70,7 @@
 
       <div>
 
-      	<form style="margin-top:40px; margin-bottom:40px;" id="ajax-send" method="POST" action="tuff/tuffsend.php">
+      	<form style="margin-top:40px; margin-bottom:40px;" id="ajax-send" method="POST" action="/tuff/tuffsend.php">
  
 		   <fieldset class="form-group">
 		  	<span style="margin-bottom: 20px; font-size: 21px;">1. Jag går på TUFFs nätverksträffar, främst för att:</span>

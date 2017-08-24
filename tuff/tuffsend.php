@@ -21,7 +21,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "magnus@tenco.se";
+        $recipient = "adriana@tenco.se";
 
         // Set the email subject.
         $subject = "ALMI TUFF FORM";

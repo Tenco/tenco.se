@@ -66,7 +66,7 @@
       <div class="page-header">
         <h1>TUFF-träff den 26 sept 2017 kl 08:30</h1>
       </div>
-      <p class="lead">Vänligen dela med dig av dina erfarenheter som företagare genom att svara på nedan 3 frågor inför TUFF co-creation workshop. Dina svar är anonyma och används till att gemensamt med andras svar forma riktning på workshopen</p>
+      <p class="lead">Vänligen dela med dig av dina erfarenheter som företagare genom att svara på nedan 3 frågor inför TUFF co-creation workshop. Dina svar är anonyma och används till att gemensamt med andras svar forma riktning på workshopen.</p>
 
       <div>
 

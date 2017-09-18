@@ -354,22 +354,6 @@
                   <p>Monika is a service designer with a background in linguistics and multimedia. She is an observer motivated to define problems and make solutions for a big impact.</p>
               </div>
               <div class="item">
-                <img class="display-pic" src="img/stefan.jpg" alt="Tencollaborator">
-                  <h3>Stefan Palmqvist</h3>
-                  <!--h4>Service Designer</h4-->
-                  <p>Stefan is a natural storyteller with background in brand strategy, advertising and identity design.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
-              <div class="item">
-                  <img class="display-pic" src="img/christine.png" alt="Tencollaborator">
-                  <h3>Christine Kiliam Hinsell</h3>
-                  <!--h4>STRATEGIC FACILITATOR</h4-->
-                  <p>Christine is a senior communication expert supporting management teams and individuals in change processes.</p>
-              </div>
-              <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
                   <h3>Thomas Glennow</h3>
                   <!--h4>ENTERPRISE ARCHITECT</h4-->

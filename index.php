@@ -404,7 +404,16 @@
 
       <div class="container">
         <div class="row">
-          
+
+          <div class="col-md-2 col-xs-4">
+            <img src="img/clients/cdon.png" class="client-logo img-responsive">
+          </div>
+          <div class="col-md-2 col-xs-4">
+            <img src="img/clients/folk.png" class="client-logo img-responsive">
+          </div>
+          <div class="col-md-2 col-xs-4">
+            <img src="img/clients/good.png" class="client-logo img-responsive">
+          </div>
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/almi.png" class="client-logo img-responsive">
           </div>
@@ -436,9 +445,6 @@
             <img src="img/clients/primarvarden.png" class="client-logo img-responsive">
           </div>
           <div class="col-md-2 col-xs-4">
-            <img src="img/clients/elicit.png" class="client-logo img-responsive">
-          </div>
-          <div class="col-md-2 col-xs-4">
             <img src="img/clients/it.png" class="client-logo img-responsive">
           </div>
           <div class="col-md-2 col-xs-4">
@@ -451,14 +457,8 @@
             <img src="img/clients/kiliam.png" class="client-logo img-responsive">
           </div>
           <div class="col-md-2 col-xs-4">
-            <img src="img/clients/vf.png" class="client-logo img-responsive">
-          </div>
-          <div class="col-md-2 col-xs-4">
             <img src="img/clients/jfl.png" class="client-logo img-responsive">
           </div>
-            <div class="col-md-2 col-xs-4">
-                <img src="img/clients/amato.png" class="client-logo img-responsive">
-            </div>
         </div> <!-- /row -->
       </div> <!-- /container -->
 

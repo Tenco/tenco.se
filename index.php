@@ -334,10 +334,10 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
-                <img class="display-pic" src="img/janina.png" alt="Tencollaborator">
-                  <h3>Janina Sjöström</h3>
+                <img class="display-pic" src="img/mattias.png" alt="CEO">
+                  <h3>Mattias Nordgren</h3>
                   <!--h4>Service Designer</h4-->
-                  <p>Janina is a Journalist, Communications Officer and an experienced Graphic Designer. Her focus lies in holistic solutions based on the needs expressed by people.</p>
+                  <p>Mattias is an experienced Enterprise Architect. He is outgoing, calm and entrepreneurial with a good portion of determination and persistency.</p>
                   <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
                   <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -510,7 +510,6 @@
                 <li><a href="http://sweden.service-design-network.org/" target="_new">Service Design Network</a></li>
                 <li><a target="_new" href="http://mediaevolution.se">Media Evoulution</a></li>
                 <li><a target="_new" href="http://www.itinforma.se/">IT informa</a></li>
-                <li><a target="_new" href="http://humanintel.se">Humanintel</a></li>
               </ul>
             </div>  
           </div>

@@ -129,9 +129,9 @@
           <div class="container">
             <div class="row">
               <div class="carousel-caption-center colour-white">
-                <h2>We offer</h2>
-                <h1>Service Innovation and Improvement.</h1>
-                <p>With Service Design we put Your Customers in the Center.</p>
+                <!--h2>We offer</h2-->
+                <h1>WE CREATE FLOW BETWEEN BUSINESS, PEOPLE AND TECHNOLOGY</h1>
+                <p>We design holistic customer and user experiences that create value for business.</p>
                 <p>
                   <a class="btn btn-lg btn-primary signup" href="#" role="button">
                   Get in touch</a></p>
@@ -242,7 +242,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-12 overlay-text">
-            <h2>We get into the heads of your customers</h2>
+            <h2>We use service design methodology to create solutions that make work and life easier, clearer, and more valuable for everyone</h2>
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
 
@@ -482,6 +482,7 @@
                 <p>
                 <a href="tel:+46767621011">+46 (0)767 62 10 11</a><br />
                 <a href="mailto:office@tenco.se">office@tenco.se</a>
+
                 </p>
                 <br>
                 <p class="muted">© 2014 Tenco AB.</p>
@@ -535,7 +536,8 @@
         </p>
         <p>
           <a href="mailto:office@tenco.se">office@tenco.se</a><br />
-          <a href="tel:+46767621011">+46 (0)767 62 10 11</a>
+          <a href="tel:+46767621011">+46 (0)767 62 10 11</a><br />
+          <a href="https://goo.gl/maps/D8ApwQFyGkT2" target="_new">Humlegatan 4, 211 27 Malmö, Sweden</a>
         </p>
 
         <!--form method="post" id="contactForm">

@@ -358,11 +358,11 @@
                   <h3>Viktoria Ekberg</h3>
                   <p>Viktoria has a broad experience of different roles in international organisations. With an engeneering and design background she is focused on solving problems based on different organisational needs.</p>
               </div>
-               <div class="item">
+               <!--div class="item">
                 <img class="display-pic" src="img/emma.png" alt="Tencollaborator">
                   <h3>Emma Rugg</h3>
                   <p>Emma has a communication and marketing background working in startups. She is a creative facilitator and loves expressing complexity in a simple but sophisticated way.</p>
-              </div>
+              </div-->
               <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
                   <h3>Thomas Glennow</h3>

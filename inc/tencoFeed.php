@@ -18,7 +18,8 @@ class tencoFeed {
 	*
 	*/	
 	#private $tencodesign = 21450120;
-	private $access_token = '21450120.64dbd65.d69236aa1c284c939ffe59ae38c29f56';
+	#private $access_token = '21450120.64dbd65.d69236aa1c284c939ffe59ae38c29f56'; // broke 2018-09-25
+	private $access_token = '21450120.64dbd65.6504e8f1bc5a4b42a6ced6ab7b9f00b6';
   	#private $client_id = 'bb732030ffd9411c9f14da0647156e0f';
   	private $count = 9;
   	private $filename = 'instagrams.txt';

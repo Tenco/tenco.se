@@ -442,9 +442,9 @@
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/skanska.png" class="client-logo img-responsive">
           </div>
-          <div class="col-md-2 col-xs-4">
+          <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/studio.png" class="client-logo img-responsive">
-          </div>
+          </div-->
           <div class="col-md-2 col-xs-4">
             <!--a class="case" href=#--><img src="img/clients/tp.png" class="client-logo img-responsive"><!--/a-->
           </div>
@@ -454,9 +454,9 @@
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/skanetrafiken.png" class="client-logo img-responsive">
           </div>
-          <div class="col-md-2 col-xs-4">
+          <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/fujitsu.png" class="client-logo img-responsive">
-          </div>
+          </div-->
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/rs.png" class="client-logo img-responsive">
           </div>
@@ -466,21 +466,21 @@
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/primarvarden.png" class="client-logo img-responsive">
           </div>
-          <div class="col-md-2 col-xs-4">
+          <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/it.png" class="client-logo img-responsive">
           </div>
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/rotary.png" class="client-logo img-responsive">
           </div>
-          <div class="col-md-2 col-xs-4">
+          <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/wme.png" class="client-logo img-responsive">
-          </div>
+          </div-->
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/kiliam.png" class="client-logo img-responsive">
           </div>
-          <div class="col-md-2 col-xs-4">
+          <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/jfl.png" class="client-logo img-responsive">
-          </div>
+          </div-->
         </div> <!-- /row -->
       </div> <!-- /container -->
 
@@ -532,7 +532,6 @@
               <ul class="list-unstyled">
                 <li><a href="http://sweden.service-design-network.org/" target="_new">Service Design Network</a></li>
                 <li><a target="_new" href="http://mediaevolution.se">Media Evoulution</a></li>
-                <li><a target="_new" href="http://www.itinforma.se/">IT informa</a></li>
               </ul>
             </div>  
           </div>

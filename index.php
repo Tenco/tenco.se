@@ -359,21 +359,7 @@
                   <p>Viktoria has a broad experience of different roles in international organisations. With an engeneering and design background she is focused on solving problems based on different organisational needs.</p>
               </div>
 
-               <div class="item">
-                <img class="display-pic" src="img/jakob.jpg" alt="Tencollaborator">
-                  <h3>Jakob Håkonsson</h3>
-                  <p>Jakob is an interaction designer and master of sketching and prototyping. He is skilled in conducting qualitative research and creating meaningful design through user involvement.</p>
-              </div>
-               <div class="item">
-                <img class="display-pic" src="img/christian.jpg" alt="Tencollaborator">
-                  <h3>Christian Scully</h3>
-                  <p>Christian is a Service Systems Designer passionate about service innovation and creating great customer experiences. He is a content creator and skilled photographer.</p>
-              </div>
-               <div class="item">
-                <img class="display-pic" src="img/izabella.jpg" alt="Tencollaborator">
-                  <h3>Izabella Rudics</h3>
-                  <p>Izabella is a service designer with a background in product design who loves to work with users to identify their needs and create pleasurable and enriching experiences with and for them.</p>
-              </div>
+               
 
                <!--div class="item">
                 <img class="display-pic" src="img/emma.png" alt="Tencollaborator">

@@ -361,11 +361,11 @@
 
                
 
-               <!--div class="item">
-                <img class="display-pic" src="img/emma.png" alt="Tencollaborator">
-                  <h3>Emma Rugg</h3>
-                  <p>Emma has a communication and marketing background working in startups. She is a creative facilitator and loves expressing complexity in a simple but sophisticated way.</p>
-              </div-->
+               <div class="item">
+                <img class="display-pic" src="img/josef.jpg" alt="Tencollaborator">
+                  <h3>Josef Sahlberg</h3>
+                  <p>Josef is our Graphic Designer with UX skills from many years of contributing to the success of big branding and change projects. His passion for holistic solutions is contagious.</p>
+              </div>
               <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
                   <h3>Thomas Glennow</h3>

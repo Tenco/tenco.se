@@ -364,7 +364,7 @@
                <div class="item">
                 <img class="display-pic" src="img/josef.jpg" alt="Tencollaborator">
                   <h3>Josef Sahlberg</h3>
-                  <p>Josef is our 1 350 Visual Designer with UX skills from many years of contributing to the success of big branding and change projects. His passion for holistic solutions is contagious.</p>
+                  <p>Josef is our Visual Designer with UX skills from many years of contributing to the success of big branding and change projects. His passion for holistic solutions is contagious.</p>
               </div>
               <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">

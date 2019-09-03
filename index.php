@@ -457,12 +457,12 @@
           </div>
           <div class="col-md-2 col-xs-4">
             <img src="img/clients/rotary.png" class="client-logo img-responsive">
-          </div>
+          </div -->
           <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/wme.png" class="client-logo img-responsive">
           </div-->
           <div class="col-md-2 col-xs-4">
-            <img src="img/clients/kiliam.png" class="client-logo img-responsive">
+            <img src="img/clients/verisure.png" class="client-logo img-responsive">
           </div>
           <!--div class="col-md-2 col-xs-4">
             <img src="img/clients/jfl.png" class="client-logo img-responsive">

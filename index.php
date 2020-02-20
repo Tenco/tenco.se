@@ -368,11 +368,6 @@
               </div>
 
               <div class="item">
-                <img class="display-pic" src="img/jennifer.png" alt="Tencollaborator">
-                  <h3>Jennifer Larsson</h3>
-                  <p>Jennifer is an empathetic User Experience designer and studied nursing. She has a great eye for details in processes and contributes with delightful User Interfaces.</p>
-              </div>
-              <div class="item">
                 <img class="display-pic" src="img/hanna.png" alt="Tencollaborator">
                   <h3>Hanna von Buxhoeveden</h3>
                   <p>Hanna is a multifaceted designer solving problems with a collaborative drive using the latest in tools and methods to inspire teams and their creativity.</p>

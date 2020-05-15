@@ -130,7 +130,8 @@
             <div class="row">
               <div class="carousel-caption-center colour-white">
                 <!--h2>We offer</h2-->
-                <h1>WE CREATE FLOW BETWEEN BUSINESS, PEOPLE AND TECHNOLOGY</h1>
+                <!--h1>WE CREATE FLOW BETWEEN BUSINESS, PEOPLE AND TECHNOLOGY</h1-->
+                <h1>BUSINESS UPCYCLING</h1>
                 <p>We design holistic customer and user experiences that create value for business.</p>
                 <p>
                   <a class="btn btn-lg btn-primary signup" href="#" role="button">

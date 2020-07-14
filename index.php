@@ -1,11 +1,12 @@
 <?php
+
   /**
 
   INCLUDES
 
   */
 
-	require 'vendor/autoload.php';
+	#require 'vendor/autoload.php';
   
 
   /**
@@ -15,14 +16,13 @@
   */
 
   	// class found in inc/tencoFeed.php
-	$feed = new tenco\tencoFeed();
- 	$str = $feed->getTenLatestInstagramPhotos();
- 	$insta_array = unserialize($str);
+	#$feed = new tenco\tencoFeed();
+ 	#$str = $feed->getTenLatestInstagramPhotos();
+ 	#$insta_array = unserialize($str);
   
 
   // set the time limit message:
   # $limit = "2015-07-31 00:00:00.0";
-
 
 ?>
 
@@ -106,7 +106,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
                 <!--li><a href="#intro">Home</a></li-->
-                <li><a href="#feed">News</a></li>
+                <!--li><a href="#feed">News</a></li-->
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#clients">Clients</a></li>
@@ -132,7 +132,8 @@
                 <!--h2>We offer</h2-->
                 <!--h1>WE CREATE FLOW BETWEEN BUSINESS, PEOPLE AND TECHNOLOGY</h1-->
                 <h1>BUSINESS UPCYCLING</h1>
-                <p>We design holistic customer and user experiences that create value for business.</p>
+                <!--p>We design holistic customer and user experiences that create value for business.</p-->
+                 <p>We prototype sustainable change</p>
                 <p>
                   <a class="btn btn-lg btn-primary signup" href="#" role="button">
                   Get in touch</a></p>
@@ -168,7 +169,7 @@
           <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
            
            <?php
-
+           /*
             foreach ($insta_array as $k=>$v)
             {
 
@@ -198,6 +199,7 @@
             </div>';
 
             }
+            */
            ?>
           </div>
         </div>
@@ -209,6 +211,7 @@
             <div id="owl" class="owl-carousel">
               
               <?php
+              /*
 				reset($insta_array);
 				$n = 0;
 				foreach ($insta_array as $k=>$v)
@@ -222,6 +225,7 @@
 
 				$n++;
               }
+              */
               ?>
             </div>
           </div>

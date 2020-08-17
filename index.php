@@ -358,13 +358,7 @@
                   <h3>Eric Ericsson</h3>
                   <p>Eric is an experienced front end developer turning business requirements and user needs into prototypes and solutions.</p>
               </div>
-              <div class="item">
-                <img class="display-pic" src="img/viktoria.jpg" alt="Tencollaborator">
-                  <h3>Viktoria Ekberg</h3>
-                  <p>Viktoria has a broad experience of different roles in international organisations. With an engeneering and design background she is focused on solving problems based on different organisational needs.</p>
-              </div>
-
-               
+                            
 
                <div class="item">
                 <img class="display-pic" src="img/josef.jpg" alt="Tencollaborator">

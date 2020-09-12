@@ -373,11 +373,18 @@
               </div>
 
               <div class="item">
+                  <img class="display-pic" src="img/simona.png" alt="Tencollaborator">
+                  <h3>Simona Mancusi</h3>
+                  <!--h4>ENTERPRISE ARCHITECT</h4-->
+                  <p>Simona is a bundle of energy, passionate about insights from people and cultures through action research. She is eager and skilled in connecting the dots working with systemic design and corporate foresight.</p>
+              </div>
+
+              <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
                   <h3>Thomas Glennow</h3>
                   <!--h4>ENTERPRISE ARCHITECT</h4-->
                   <p>Thomas uses his analytical skills and technical experience to increase the value you get out of your information technology investment.</p>
-                </div>
+              </div>
               <div class="item">
                 <img class="display-pic" src="img/user-avatar2.jpg" alt="Team Member">
                   <h3>Your Face Here</h3>

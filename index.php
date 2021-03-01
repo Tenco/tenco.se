@@ -349,17 +349,11 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
-                <img class="display-pic" src="img/monika.png" alt="Tencollaborator">
-                  <h3>Monika Zielińska</h3>
-                  <p>Monika is a service designer with a background in linguistics and multimedia. She is an observer motivated to define problems and make solutions for a big impact.</p>
-              </div>
-              <div class="item">
                 <img class="display-pic" src="img/eric.png" alt="Tencollaborator">
                   <h3>Eric Ericsson</h3>
                   <p>Eric is an experienced front end developer turning business requirements and user needs into prototypes and solutions.</p>
               </div>
                             
-
                <div class="item">
                 <img class="display-pic" src="img/josef.jpg" alt="Tencollaborator">
                   <h3>Josef Sahlberg</h3>

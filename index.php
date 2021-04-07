@@ -339,16 +339,6 @@
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
               <div class="item">
-                <img class="display-pic" src="img/mattias.png" alt="CEO">
-                  <h3>Mattias Nordgren</h3>
-                  <!--h4>Service Designer</h4-->
-                  <p>Mattias is an experienced Enterprise Architect. He is outgoing, calm and entrepreneurial with a good portion of determination and persistency.</p>
-                  <!--a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
-              </div>
-              <div class="item">
                 <img class="display-pic" src="img/eric.png" alt="Tencollaborator">
                   <h3>Eric Ericsson</h3>
                   <p>Eric is an experienced front end developer turning business requirements and user needs into prototypes and solutions.</p>

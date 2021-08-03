@@ -343,12 +343,6 @@
                   <h3>Eric Ericsson</h3>
                   <p>Eric is an experienced front end developer turning business requirements and user needs into prototypes and solutions.</p>
               </div>
-                            
-               <div class="item">
-                <img class="display-pic" src="img/josef.jpg" alt="Tencollaborator">
-                  <h3>Josef Sahlberg</h3>
-                  <p>Josef is our Visual Designer with UX skills from many years of contributing to the success of big branding and change projects. His passion for holistic solutions is contagious.</p>
-              </div>
 
               <div class="item">
                 <img class="display-pic" src="img/hanna.png" alt="Tencollaborator">

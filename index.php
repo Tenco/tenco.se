@@ -23,7 +23,7 @@
 
   // set the time limit message:
   # $limit = "2015-07-31 00:00:00.0";
-
+$insta_array = NULL;
 ?>
 
 <!DOCTYPE html>
@@ -124,7 +124,7 @@
  <!-- Hero Banner
     ================================================== -->
     <div id="intro-video" style="background-image: url( 'img/bg.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-      <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=knuv8bZKOWE',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
+      <!--a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=knuv8bZKOWE',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a-->
         <div class="item">
           <div class="container">
             <div class="row">

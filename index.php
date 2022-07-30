@@ -338,12 +338,7 @@ $insta_array = NULL;
                   <a class="icon" href="http://www.linkedin.com/pub/david-parrelli/17/b22/a11" target="_blank"><i class="fa fa-linkedin"></i></a>
                   <a class="icon" href="http://dribbble.com/dparrelli" target="_blank"><i class="fa fa-dribbble"></i></a-->
               </div>
-              <div class="item">
-                <img class="display-pic" src="img/eric.png" alt="Tencollaborator">
-                  <h3>Eric Ericsson</h3>
-                  <p>Eric is an experienced front end developer turning business requirements and user needs into prototypes and solutions.</p>
-              </div>
-
+              
               <div class="item">
                 <img class="display-pic" src="img/hanna.png" alt="Tencollaborator">
                   <h3>Hanna von Buxhoeveden</h3>

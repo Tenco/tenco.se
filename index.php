@@ -345,12 +345,11 @@ $insta_array = NULL;
                   <p>Hanna is a multifaceted designer solving problems with a collaborative drive using the latest in tools and methods to inspire teams and their creativity.</p>
               </div>
 
-              <div class="item">
+              <!--div class="item">
                   <img class="display-pic" src="img/simona.png" alt="Tencollaborator">
-                  <h3>Simona Mancusi</h3>
-                  <!--h4>ENTERPRISE ARCHITECT</h4-->
-                  <p>Simona is a bundle of energy, passionate about insights from people and cultures through action research. She is eager and skilled in connecting the dots working with systemic design and corporate foresight.</p>
-              </div>
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem is a bundle of energy, passionate about insights from people and cultures through action research. She is eager and skilled in connecting the dots working with systemic design and corporate foresight.</p>
+              </div-->
 
               <div class="item">
                   <img class="display-pic" src="img/thomas.png" alt="Tencollaborator">
